@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Solicite um orçamento personalizado para o seu projeto com a Scale Engenharia.">
+  <title>Solicitar orçamento | Scale Engenharia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="orcamento.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Scale Engenharia - Início"><span>SCALE</span></a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a><a href="valores.html">Valores</a><a href="gestao-obras.html">Gestão de Obras</a><a href="projetos.html">Projetos</a><a href="cursos.html">Cursos</a><a href="contato.html">Contato</a>
+      </nav>
+      <a class="button button-outline header-cta active" href="orcamento.html">Solicitar orçamento</a>
+    </div>
+  </header>
+
+  <main class="budget-page">
+    <div class="container">
+      <header class="budget-heading">
+        <p class="eyebrow">Vamos conversar</p>
+        <h1>Solicite seu orçamento</h1>
+        <p>Conte-nos um pouco sobre o seu projeto. Entraremos em contato para entender os<br>detalhes e preparar uma proposta.</p>
+      </header>
+
+      <div class="budget-layout">
+        <section class="process" aria-labelledby="process-title">
+          <h2 id="process-title">Como funciona</h2>
+          <ol>
+            <li><span class="step-number">01</span><div><strong>Envie as informações</strong><p>Preencha os dados principais do projeto.</p></div></li>
+            <li><span class="step-number">02</span><div><strong>Analisamos a necessidade</strong><p>Nossa equipe entrará em contato para alinhar os detalhes.</p></div></li>
+            <li><span class="step-number">03</span><div><strong>Preparamos sua proposta</strong><p>Elaboramos um orçamento de acordo com o escopo.</p></div></li>
+          </ol>
+        </section>
+
+        <form class="budget-form" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Substitua pelo access key criado gratuitamente no Web3Forms. -->
+          <input type="hidden" name="access_key" value="ADICIONE_SUA_CHAVE_WEB3FORMS">
+          <input type="hidden" name="subject" value="Nova solicitação de orçamento — Site Scale">
+          <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off">
+
+          <div class="form-grid">
+            <label><span>Nome</span><input type="text" name="nome" autocomplete="name" required></label>
+            <label><span>Telefone</span><input type="tel" name="telefone" autocomplete="tel" required></label>
+            <label><span>E-mail</span><input type="email" name="email" autocomplete="email" required></label>
+            <label><span>Tipo de serviço</span><select name="tipo_servico" required><option value="" selected disabled></option><option>Projetos de engenharia</option><option>Levantamentos quantitativos</option><option>Consultoria técnica</option><option>Gestão de obras</option><option>Outro</option></select></label>
+            <label><span>Valor de investimento previsto</span><select name="investimento" required><option value="" selected disabled></option><option>Até R$ 5.000</option><option>De R$ 5.000 a R$ 15.000</option><option>De R$ 15.000 a R$ 30.000</option><option>Acima de R$ 30.000</option><option>A definir</option></select></label>
+            <label><span>Como conheceu a Scale?</span><select name="origem" required><option value="" selected disabled></option><option>Instagram</option><option>LinkedIn</option><option>Google</option><option>Indicação</option><option>Evento</option><option>Outro</option></select></label>
+            <label class="full"><span>Prazo desejado</span><input type="text" name="prazo" placeholder="Ex.: 60 dias"></label>
+            <label class="full message-field"><span>Conte um pouco sobre o projeto</span><textarea name="mensagem" required></textarea></label>
+          </div>
+
+          <div class="form-actions"><button class="button submit-button" type="submit">Solicitar orçamento <span>→</span></button><p>Responderemos o mais breve possível!</p></div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a class="logo footer-logo" href="index.html"><span>SCALE</span></a>
+      <div><h2>Navegação</h2><nav aria-label="Navegação do rodapé"><a href="index.html">Início</a><a href="valores.html">Valores</a><a href="gestao-obras.html">Gestão de Obras</a><a href="projetos.html">Projetos</a><a href="cursos.html">Cursos</a><a href="contato.html">Contato</a><a href="orcamento.html">Solicitar Orçamento</a></nav></div>
+      <div><h2>Contato</h2><address><a href="tel:+5511962718932">☎&nbsp; (11) 96271-8932</a><a href="mailto:engscaleprojects@gmail.com">✉&nbsp; engscaleprojects@gmail.com</a><span>⌖&nbsp; São Paulo - SP</span></address></div>
+      <div><h2>Siga-nos</h2><div class="social-links"><a href="#">▣&nbsp; Instagram</a><a href="#">▣&nbsp; LinkedIn</a></div></div>
+    </div>
+    <div class="container copyright">© 2026 SCALE | ARQUITETURA E ENGENHARIA. TODOS OS DIREITOS RESERVADOS.</div>
+  </footer>
+</body>
+</html>
