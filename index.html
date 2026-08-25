@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,27 @@
   <title>Scale Engenharia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <section class="hero" id="inicio">
-    <header class="site-header">
+    <header class="site-header site-header-index">
       <div class="container header-inner">
-        <a class="logo" href="#inicio" aria-label="Scale Engenharia - Início"><span>SCALE</span></a>
+        <a class="logo" href="index.html" aria-label="Scale Engenharia - Início"><img class="logo-header"
+            src="img/logo.png" alt="Logo"></a>
         <nav class="main-nav" aria-label="Navegação principal">
-          <a href="#inicio">Início</a>
-          <a href="#valores">Valores</a>
-          <a href="#gestao">Gestão de Obras</a>
-          <a href="#projetos">Projetos</a>
-          <a href="#cursos">Cursos</a>
-          <a href="#contato">Contato</a>
+          <a class="active" href="index.html">Início</a>
+          <a href="historia.html">História</a>
+          <a href="valores.html">Valores</a>
+          <a href="gestao-obras.html">Gestão de Obras</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="cursos.html">Cursos</a>
+          <a href="contato.html">Contato</a>
         </nav>
-        <a class="button button-outline header-cta" href="#orcamento">Solicitar orçamento</a>
+        <a class="button button-outline header-cta" href="orcamento.html">Solicitar orçamento</a>
       </div>
     </header>
 
@@ -31,8 +36,8 @@
       <h1>Projetos que<br>constroem o futuro</h1>
       <p>Soluções completas de engenharia com tecnologia, precisão e eficiência em cada parte do projeto.</p>
       <div class="button-row">
-        <a class="button button-light" href="#orcamento">Solicitar orçamento <span aria-hidden="true">→</span></a>
-        <a class="button button-outline" href="#projetos">Conhecer projetos</a>
+        <a class="button button-light" href="orcamento.html">Solicitar orçamento <span aria-hidden="true">→</span></a>
+        <a class="button button-outline" href="projetos.html">Conhecer projetos</a>
       </div>
     </div>
   </section>
@@ -47,22 +52,22 @@
 
         <div class="services-grid">
           <article class="service-item">
-            <svg class="line-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M12 55h40M17 55V16h22v39M39 27h10v28M22 22h5v6h-5zm10 0h5v6h-5zM22 33h5v6h-5zm10 0h5v6h-5zM22 44h5v6h-5zm10 0h5v6h-5zm12-11h5v6h-5zm0 11h5v6h-5z"/></svg>
+            <img class="service-icon" src="img/building.png" alt="Ícone de projetos de engenharia">
             <h3>Projetos de<br>engenharia</h3>
             <p>Desenvolvimento de projetos completos de engenharia.</p>
           </article>
           <article class="service-item">
-            <svg class="line-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M11 54h42V27H35V11H11v43zm7-7h28M19 35h20M19 42h20M34 27l16-16 5 5-16 16-8 3 3-8z"/></svg>
+            <img class="service-icon" src="img/architecture.png" alt="Ícone de projetos de engenharia">
             <h3>Levantamentos<br>quantitativos</h3>
             <p>Levantamentos precisos para orçamentos e planejamentos de obras.</p>
           </article>
           <article class="service-item">
-            <svg class="line-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M21 26v-6a11 11 0 0 1 22 0v6M18 22h28v6a14 14 0 0 1-28 0v-6zm8-1v-8m12 8v-8M14 55v-9c0-8 8-12 18-12s18 4 18 12v9M24 39v16m16-16v16M29 43h6m-6 6h6"/></svg>
+            <img class="service-icon" src="img/worker (1).png" alt="Ícone de projetos de engenharia">
             <h3>Consultoria<br>técnica</h3>
             <p>Apoio técnico especializado para otimizar processos e garantir resultados.</p>
           </article>
           <article class="service-item">
-            <svg class="line-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="m7 25 25-13 25 13-25 13L7 25zm10 7v13c7 7 23 7 30 0V32M53 28v17m0 0-3 6h6l-3-6z"/></svg>
+            <img class="service-icon" src="img/graduate.png" alt="Ícone de projetos de engenharia">
             <h3>Cursos e<br>treinamentos</h3>
             <p>Capacitação em ferramentas e metodologias da construção civil.</p>
           </article>
@@ -79,23 +84,35 @@
 
         <div class="projects-grid">
           <article class="project-card">
-            <img src="assets/project.jpg" alt="Empreendimento residencial em construção">
-            <div class="project-card-body"><h3>Nome do projeto</h3><p>Projeto · Tipo do projeto <span>→</span></p></div>
+            <img src="img/parth-savani-nZz9i0YxEQw-unsplash.jpg" alt="Empreendimento residencial em construção">
+            <div class="project-card-body">
+              <h3>Nome do projeto</h3>
+              <p>Projeto · Tipo do projeto <span>→</span></p>
+            </div>
           </article>
           <article class="project-card">
-            <img src="assets/project.jpg" alt="Empreendimento residencial em construção">
-            <div class="project-card-body"><h3>Nome do projeto</h3><p>Projeto · Tipo do projeto <span>→</span></p></div>
+            <img src="img/parth-savani-nZz9i0YxEQw-unsplash.jpg" alt="Empreendimento residencial em construção">
+            <div class="project-card-body">
+              <h3>Nome do projeto</h3>
+              <p>Projeto · Tipo do projeto <span>→</span></p>
+            </div>
           </article>
           <article class="project-card">
-            <img src="assets/project.jpg" alt="Empreendimento residencial em construção">
-            <div class="project-card-body"><h3>Nome do projeto</h3><p>Projeto · Tipo do projeto <span>→</span></p></div>
+            <img src="img/parth-savani-nZz9i0YxEQw-unsplash.jpg" alt="Empreendimento residencial em construção">
+            <div class="project-card-body">
+              <h3>Nome do projeto</h3>
+              <p>Projeto · Tipo do projeto <span>→</span></p>
+            </div>
           </article>
           <article class="project-card">
-            <img src="assets/project.jpg" alt="Empreendimento residencial em construção">
-            <div class="project-card-body"><h3>Nome do projeto</h3><p>Projeto · Tipo do projeto <span>→</span></p></div>
+            <img src="img/parth-savani-nZz9i0YxEQw-unsplash.jpg" alt="Empreendimento residencial em construção">
+            <div class="project-card-body">
+              <h3>Nome do projeto</h3>
+              <p>Projeto · Tipo do projeto <span>→</span></p>
+            </div>
           </article>
         </div>
-        <div class="section-action"><a class="button button-outline" href="#">Ver todos os projetos</a></div>
+        <div class="section-action"><a class="button button-outline" href="projetos.html">Ver todos os projetos</a></div>
       </div>
     </section>
 
@@ -104,12 +121,19 @@
         <div>
           <p class="eyebrow">Cursos Scale</p>
           <h2>Quer aprender a desenvolver<br>projetos de engenharia utilizando<br>tecnologia BIM?</h2>
-          <p class="muted">A Scale está com cursos práticos de softwares essenciais para a engenharia e construção civil.</p>
+          <p class="muted">A Scale está com cursos práticos de softwares essenciais para a engenharia e construção
+            civil.</p>
         </div>
         <div class="tools">
           <p class="eyebrow">Ferramentas abordadas:</p>
-          <ul><li>Revit</li><li>Eberick</li><li>Autocad</li><li>Excel integrando BIM</li><li>Navisworks</li></ul>
-          <a class="button button-outline" href="#">Conhecer cursos <span aria-hidden="true">→</span></a>
+          <ul>
+            <li>Revit</li>
+            <li>Eberick</li>
+            <li>Autocad</li>
+            <li>Excel integrando BIM</li>
+            <li>Navisworks</li>
+          </ul>
+          <a class="button button-outline" href="cursos.html">Conhecer cursos <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
@@ -119,36 +143,72 @@
         <div class="about-copy">
           <p class="eyebrow">Sobre a Scale</p>
           <h2>Engenharia com precisão e<br>compromisso</h2>
-          <p>A Scale é uma empresa de engenharia especializada no desenvolvimento de projetos utilizando tecnologia BIM, buscando unir precisão, compatibilização e eficiência em cada etapa do projeto.</p>
-          <a class="button button-outline" href="#">Conheça nossos valores <span aria-hidden="true">→</span></a>
+          <p>A Scale é uma empresa de engenharia especializada no desenvolvimento de projetos utilizando tecnologia BIM,
+            buscando unir precisão, compatibilização e eficiência em cada etapa do projeto.</p>
+          <a class="button button-outline" href="valores.html">Conheça nossos valores <span aria-hidden="true">→</span></a>
         </div>
 
         <div class="differentials">
-          <p class="eyebrow differentials-title">Nossos diferenciais</p>
+          <p class="eyebrow differentials-title">
+            Nossos diferenciais
+          </p>
+
           <div class="differentials-grid">
             <article class="differential-card">
-              <svg class="line-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="m32 7 18 10v30L32 57 14 47V17L32 7zm0 0v50M14 17l36 20M50 17 14 37M14 47l36-30M50 47 14 17"/><circle cx="32" cy="7" r="3"/><circle cx="14" cy="17" r="3"/><circle cx="50" cy="17" r="3"/><circle cx="14" cy="47" r="3"/><circle cx="50" cy="47" r="3"/><circle cx="32" cy="57" r="3"/></svg>
-              <p>Projetos desenvolvidos<br>com metodologia BIM</p>
+              <img class="differential-icon" src="img/bim.png" alt="Representação da metodologia BIM">
+
+              <p>
+                Projetos desenvolvidos<br>
+                com metodologia BIM
+              </p>
             </article>
+
             <article class="differential-card">
-              <svg class="line-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 8h21v10c-7-4-12 1-12 6s5 10 12 6v11H18c4 7-1 12-6 12S2 48 8 41V8zm21 0h27v21H46c4-7-1-12-6-12s-10 5-6 12H29V8zm0 21v27h12c-4-7 1-12 6-12s10 5 6 12h3V29H46c4 7-1 12-6 12s-10-5-6-12h-5z"/></svg>
-              <p>Compatibilização técnica<br>entre disciplinas</p>
+              <img class="differential-icon" src="img/jigsaw.png" alt="Compatibilização entre disciplinas">
+
+              <p>
+                Compatibilização técnica<br>
+                entre disciplinas
+              </p>
             </article>
+
             <article class="differential-card">
-              <svg class="line-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M9 54V38h10v16H9zm18 0V29h10v25H27zm18 0V18h10v36H45zM8 27l15-14 12 8L55 4m-9 0h9v9"/></svg>
-              <p>Macrofluxos de execução<br>para melhor andamento<br>da obra</p>
+              <img class="differential-icon" src="img/quant.png" alt="Macrofluxos de execução">
+
+              <p>
+                Macrofluxos de execução<br>
+                para melhor andamento<br>
+                da obra
+              </p>
             </article>
+
             <article class="differential-card">
-              <svg class="line-icon" viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="23" cy="17" rx="13" ry="6"/><path d="M10 17v9c0 3 6 6 13 6s13-3 13-6v-9M10 26v9c0 3 6 6 13 6 2 0 4 0 6-1"/><ellipse cx="41" cy="38" rx="13" ry="6"/><path d="M28 38v10c0 3 6 6 13 6s13-3 13-6V38M28 47c0 3 6 6 13 6s13-3 13-6"/></svg>
-              <p>Soluções visando<br>redução de custos<br>construtivos</p>
+              <img class="differential-icon" src="img/data.png" alt="Redução de custos construtivos">
+
+              <p>
+                Soluções visando<br>
+                redução de custos<br>
+                construtivos
+              </p>
             </article>
+
             <article class="differential-card">
-              <svg class="line-icon" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="17" r="9"/><circle cx="13" cy="24" r="7"/><circle cx="51" cy="24" r="7"/><path d="M17 53v-8c0-10 6-15 15-15s15 5 15 15v8M2 51v-7c0-7 4-11 11-11m49 18v-7c0-7-4-11-11-11"/></svg>
-              <p>Equipe multidisciplinar de<br>arquitetura e engenharia</p>
+              <img class="differential-icon" src="img/people.png" alt="Equipe multidisciplinar">
+
+              <p>
+                Equipe multidisciplinar de<br>
+                arquitetura e engenharia
+              </p>
             </article>
+
             <article class="differential-card">
-              <svg class="line-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="11" width="48" height="36" rx="2"/><path d="M24 55h16M32 47v8m-9-31 9-5 9 5v11l-9 5-9-5V24zm9-5v11m-9-6 9 6 9-6"/></svg>
-              <p>Renderizações 3D<br>realistas para<br>apresentação dos projetos</p>
+              <img class="differential-icon" src="img/tv.png" alt="Renderizações tridimensionais">
+
+              <p>
+                Renderizações 3D<br>
+                realistas para<br>
+                apresentação dos projetos
+              </p>
             </article>
           </div>
         </div>
@@ -159,19 +219,144 @@
       <div class="container cta-inner">
         <h2>Vamos tirar seu projeto do papel?</h2>
         <p>Fale com a equipe e solicite um orçamento personalizado.</p>
-        <a class="button button-light" href="#">Solicitar orçamento <span aria-hidden="true">→</span></a>
+        <a class="button button-light" href="orcamento.html">Solicitar orçamento <span aria-hidden="true">→</span></a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer section-black" id="contato">
+  <footer class="site-footer" id="contato">
     <div class="container footer-grid">
-      <a class="logo footer-logo" href="#inicio"><span>SCALE</span></a>
-      <div><h2>Navegação</h2><nav aria-label="Navegação do rodapé"><a href="#inicio">Início</a><a href="#valores">Valores</a><a href="#gestao">Gestão de Obras</a><a href="#projetos">Projetos</a><a href="#cursos">Cursos</a><a href="#contato">Contato</a><a href="#orcamento">Solicitar Orçamento</a></nav></div>
-      <div><h2>Contato</h2><address><a href="tel:+5511962718932">♧&nbsp; (11) 96271-8932</a><a href="mailto:engscaleprojects@gmail.com">✉&nbsp; engscaleprojects@gmail.com</a><span>⌖&nbsp; São Paulo - SP</span></address></div>
-      <div><h2>Siga-nos</h2><div class="social-links"><a href="#">▣&nbsp; Instagram</a><a href="#">▣&nbsp; LinkedIn</a></div></div>
+      <a class="logo footer-logo" href="index.html" aria-label="Ir para a página inicial">
+        <img src="img/logo.png" alt="Scale Engenharia">
+      </a>
+
+      <div class="footer-column">
+        <h2>Navegação</h2>
+
+        <nav class="footer-navigation" aria-label="Navegação do rodapé">
+          <a href="index.html">Início</a>
+          <a href="historia.html">História</a>
+          <a href="valores.html">Valores</a>
+          <a href="gestao-obras.html">Gestão de Obras</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="cursos.html">Cursos</a>
+          <a href="contato.html">Contato</a>
+          <a href="orcamento.html">Solicitar orçamento</a>
+        </nav>
+      </div>
+
+      <div class="footer-column">
+        <h2>Contato</h2>
+
+        <address class="footer-contact">
+          <button class="footer-action copy-button" type="button" data-copy="(11) 96271-8932"
+            aria-label="Copiar telefone">
+            <img class="footer-icon" src="img/telefone.png" alt="">
+
+            <span>(11) 96271-8932</span>
+          </button>
+
+          <a class="footer-action" href="mailto:engscaleprojects@gmail.com">
+            <img class="footer-icon" src="img/email.png" alt="">
+
+            <span>engscaleprojects@gmail.com</span>
+          </a>
+
+          <button class="footer-action copy-button" type="button" data-copy="São Paulo - SP"
+            aria-label="Copiar endereço">
+            <img class="footer-icon" src="img/localizacao.png" alt="">
+
+            <span>São Paulo - SP</span>
+          </button>
+        </address>
+      </div>
+
+      <div class="footer-column">
+        <h2>Siga-nos</h2>
+
+        <div class="social-links">
+          <a class="footer-action" href="https://www.instagram.com/scale.engsp/" target="_blank"
+            rel="noopener noreferrer">
+            <img class="footer-icon" src="img/instagram.png" alt="">
+
+            <span>Instagram</span>
+          </a>
+
+          <a class="footer-action" href="https://www.linkedin.com/company/scale-engenharia/" target="_blank"
+            rel="noopener noreferrer">
+            <img class="footer-icon" src="img/linkedin.png" alt="">
+
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="container copyright">© 2026 SCALE | ARQUITETURA E ENGENHARIA. TODOS OS DIREITOS RESERVADOS.</div>
+
+    <div class="container copyright">
+      © 2026 SCALE | ARQUITETURA E ENGENHARIA. TODOS OS DIREITOS RESERVADOS.
+    </div>
   </footer>
+
+  <script>
+    document.querySelectorAll(".copy-button").forEach(function (button) {
+      button.addEventListener("click", async function () {
+        const textToCopy = button.dataset.copy;
+        const textElement = button.querySelector("span");
+        const originalText = textElement.textContent;
+
+        try {
+          await navigator.clipboard.writeText(textToCopy);
+
+          textElement.textContent = "Copiado!";
+
+          setTimeout(function () {
+            textElement.textContent = originalText;
+          }, 1500);
+        } catch (error) {
+          const temporaryInput = document.createElement("textarea");
+
+          temporaryInput.value = textToCopy;
+          temporaryInput.style.position = "fixed";
+          temporaryInput.style.opacity = "0";
+
+          document.body.appendChild(temporaryInput);
+          temporaryInput.select();
+          document.execCommand("copy");
+          temporaryInput.remove();
+
+          textElement.textContent = "Copiado!";
+
+          setTimeout(function () {
+            textElement.textContent = originalText;
+          }, 1500);
+        }
+      });
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const header = document.querySelector(".site-header-index");
+
+      if (!header) {
+        return;
+      }
+
+      function atualizarHeader() {
+        header.classList.toggle(
+          "is-scrolled",
+          window.scrollY > 60
+        );
+      }
+
+      atualizarHeader();
+
+      window.addEventListener(
+        "scroll",
+        atualizarHeader,
+        {passive: true}
+      );
+    });
+  </script>
 </body>
+
 </html>

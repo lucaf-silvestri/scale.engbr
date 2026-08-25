@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,26 @@
   <title>Gestão de Obras | Scale Engenharia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="gestao-obras.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.html" aria-label="Scale Engenharia - Início"><span>SCALE</span></a>
+      <a class="logo" href="index.html" aria-label="Scale Engenharia - Início"><img class="logo-header"
+          src="img/logo.png" alt="Logo"></a>
       <nav class="main-nav" aria-label="Navegação principal">
         <a href="index.html">Início</a>
+        <a href="historia.html">História</a>
         <a href="valores.html">Valores</a>
         <a class="active" href="gestao-obras.html">Gestão de Obras</a>
-        <a href="index.html#projetos">Projetos</a>
-        <a href="index.html#cursos">Cursos</a>
-        <a href="#contato">Contato</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="contato.html">Contato</a>
       </nav>
-      <a class="button button-outline header-cta" href="index.html#orcamento">Solicitar orçamento</a>
+      <a class="button button-outline header-cta" href="orcamento.html">Solicitar orçamento</a>
     </div>
   </header>
 
@@ -32,29 +37,70 @@
         <header class="intro-copy">
           <p class="eyebrow">Entenda nossa gestão</p>
           <h1>Gestão de obras</h1>
-          <p>Na Scale, entendemos que uma obra bem executada começa muito antes do primeiro serviço. Nossa gestão conecta planejamento e execução, acompanhando cada etapa do empreendimento para manter prazo, custo, qualidade e segurança sob controle.</p>
+          <p>Na Scale, entendemos que uma obra bem executada começa muito antes do primeiro serviço. Nossa gestão
+            conecta planejamento e execução, acompanhando cada etapa do empreendimento para manter prazo, custo,
+            qualidade e segurança sob controle.</p>
         </header>
 
         <div class="management-grid">
           <article class="management-card">
-            <svg class="line-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="9" y="13" width="46" height="42" rx="3"/><path d="M18 8v11m28-11v11M9 25h46M17 32h6v6h-6zm12 0h6v6h-6zm12 0h6v6h-6zM17 43h6v6h-6zm12 0h6v6h-6zm12 0h6v6h-6z"/></svg>
-            <h2>Gestão de<br>prazos</h2>
-            <p>Planejamos e acompanhamos o cronograma da obra, monitorando o avanço das atividades e identificando possíveis desvios. Dessa forma, conseguimos atuar de maneira antecipada para buscar o cumprimento dos prazos estabelecidos.</p>
+            <img class="management-icon" src="img/prazos.png" alt="Ícone de calendário">
+
+            <h2>
+              Gestão de<br>
+              prazos
+            </h2>
+
+            <p>
+              Planejamos e acompanhamos o cronograma da obra, monitorando o avanço das atividades e identificando
+              possíveis desvios. Dessa forma, conseguimos atuar de maneira antecipada para buscar o cumprimento dos
+              prazos estabelecidos.
+            </p>
           </article>
+
           <article class="management-card">
-            <svg class="line-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M12 55V37h9v18M27 55V28h9v27M42 55V17h9v38M9 55h46M17 30v-5m15-4v-5m15-6V6"/></svg>
-            <h2>Gestão de<br>custos</h2>
-            <p>Acompanhamos o orçamento, as contratações, as medições e o consumo de recursos ao longo da execução. Nosso objetivo é manter os custos alinhados ao planejamento, reduzindo desperdícios e permitindo decisões mais assertivas.</p>
+            <img class="management-icon" src="img/custos_sem_fundo.png" alt="Ícone de gestão de custos">
+
+            <h2>
+              Gestão de<br>
+              custos
+            </h2>
+
+            <p>
+              Acompanhamos o orçamento, as contratações, as medições e o consumo de recursos ao longo da execução. Nosso
+              objetivo é manter os custos alinhados ao planejamento, reduzindo desperdícios e permitindo decisões mais
+              assertivas.
+            </p>
           </article>
+
           <article class="management-card">
-            <svg class="line-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M18 31v-7a14 14 0 0 1 28 0v7M14 28h36v6H14zM23 29V17m18 12V17M18 34c1 12 7 19 14 19s13-7 14-19"/></svg>
-            <h2>Gestão de<br>segurança</h2>
-            <p>A segurança é parte fundamental da gestão. Acompanhamos as condições do canteiro e a execução dos serviços, buscando garantir que as atividades sejam realizadas de forma responsável e de acordo com os procedimentos e requisitos aplicáveis.</p>
+            <img class="management-icon" src="img/seguranca.png" alt="Ícone de capacete de segurança">
+
+            <h2>
+              Gestão de<br>
+              segurança
+            </h2>
+
+            <p>
+              A segurança é parte fundamental da gestão. Acompanhamos as condições do canteiro e a execução dos
+              serviços, buscando garantir que as atividades sejam realizadas de forma responsável e de acordo com os
+              procedimentos e requisitos aplicáveis.
+            </p>
           </article>
+
           <article class="management-card">
-            <svg class="line-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M22 10h20v8H22zM18 14h-5v43h38V14h-5M20 27h7m-7 11h7m-7 11h7M33 27l4 4 8-9M33 38l4 4 8-9M33 49l4 4 8-9"/></svg>
-            <h2>Gestão da<br>qualidade</h2>
-            <p>Monitoramos a execução dos serviços em cada etapa, verificando sua conformidade com os projetos, especificações e padrões definidos. Assim, buscamos assegurar que o resultado final esteja alinhado ao que foi planejado.</p>
+            <img class="management-icon" src="img/qualidade.png" alt="Ícone de controle de qualidade">
+
+            <h2>
+              Gestão da<br>
+              qualidade
+            </h2>
+
+            <p>
+              Monitoramos a execução dos serviços em cada etapa, verificando sua conformidade com os projetos,
+              especificações e padrões definidos. Assim, buscamos assegurar que o resultado final esteja alinhado ao que
+              foi planejado.
+            </p>
           </article>
         </div>
       </div>
@@ -65,8 +111,10 @@
         <div class="technology-copy">
           <p class="eyebrow">Nosso diferencial</p>
           <h2>Gestão conectada à tecnologia</h2>
-          <p>Na Scale, acreditamos que a tecnologia pode transformar a maneira como uma obra é gerenciada. Utilizamos dados, modelos BIM e ferramentas digitais para aproximar o planejamento da realidade do canteiro.</p>
-          <p>Com informações organizadas e acessíveis, conseguimos acompanhar o avanço da obra, identificar problemas com antecedência e apoiar decisões mais rápidas e assertivas.</p>
+          <p>Na Scale, acreditamos que a tecnologia pode transformar a maneira como uma obra é gerenciada. Utilizamos
+            dados, modelos BIM e ferramentas digitais para aproximar o planejamento da realidade do canteiro.</p>
+          <p>Com informações organizadas e acessíveis, conseguimos acompanhar o avanço da obra, identificar problemas
+            com antecedência e apoiar decisões mais rápidas e assertivas.</p>
         </div>
         <div class="technology-image" role="img" aria-label="Profissionais utilizando modelo BIM em computadores"></div>
       </div>
@@ -82,63 +130,144 @@
         <div class="timeline" aria-label="Etapas da gestão de obras">
           <article class="timeline-step">
             <span class="timeline-number">01</span><span class="timeline-dot"></span>
-            <h3>Planejamento</h3><p>Definição de cronograma, orçamento, recursos e estratégias de execução.</p>
+            <h3>Planejamento</h3>
+            <p>Definição de cronograma, orçamento, recursos e estratégias de execução.</p>
           </article>
           <article class="timeline-step">
             <span class="timeline-number">02</span><span class="timeline-dot"></span>
-            <h3>Organização</h3><p>Coordenação das equipes, fornecedores, projetos e atividades da obra.</p>
+            <h3>Organização</h3>
+            <p>Coordenação das equipes, fornecedores, projetos e atividades da obra.</p>
           </article>
           <article class="timeline-step">
             <span class="timeline-number">03</span><span class="timeline-dot"></span>
-            <h3>Acompanhamento</h3><p>Monitoramento contínuo de prazo, custo, qualidade e segurança.</p>
+            <h3>Acompanhamento</h3>
+            <p>Monitoramento contínuo de prazo, custo, qualidade e segurança.</p>
           </article>
           <article class="timeline-step">
             <span class="timeline-number">04</span><span class="timeline-dot"></span>
-            <h3>Controle</h3><p>Identificação de desvios e definição de ações corretivas para manter a obra no caminho planejado.</p>
+            <h3>Controle</h3>
+            <p>Identificação de desvios e definição de ações corretivas para manter a obra no caminho planejado.</p>
           </article>
           <article class="timeline-step">
             <span class="timeline-number">05</span><span class="timeline-dot"></span>
-            <h3>Entrega</h3><p>Acompanhamento da conclusão dos serviços, buscando garantir que o resultado esteja alinhado aos projetos, padrões e objetivos estabelecidos.</p>
+            <h3>Entrega</h3>
+            <p>Acompanhamento da conclusão dos serviços, buscando garantir que o resultado esteja alinhado aos projetos,
+              padrões e objetivos estabelecidos.</p>
           </article>
         </div>
       </div>
     </section>
 
     <section class="bim-highlight">
-      <div class="container bim-inner">
-        <svg class="bim-icon" viewBox="0 0 120 92" aria-hidden="true"><path d="M60 9 100 31v40L60 91 20 71V31L60 9zm0 0v82M20 31l80 40M100 31 20 71M40 42l20-11 20 11v24L60 77 40 66V42zm0 0 20 12 20-12M60 54v23"/></svg>
-        <p class="eyebrow">Gestão integrada em BIM</p>
-        <p>Toda a obra é gerenciada por meio da metodologia BIM, a partir de um modelo 3D desenvolvido no Revit, que centraliza as informações e conecta todas as etapas do projeto.</p>
-      </div>
-    </section>
+    <div class="container bim-inner">
+        <img
+            class="bim-icon"
+            src="img/bim2.png"
+            alt="Ícone representando a metodologia BIM"
+        >
+
+        <p class="eyebrow">
+            Gestão integrada em BIM
+        </p>
+
+        <p>
+            Toda a obra é gerenciada por meio da metodologia BIM, a partir de um modelo 3D desenvolvido no Revit, que centraliza as informações e conecta todas as etapas do projeto.
+        </p>
+    </div>
+</section>
 
     <section class="result-section">
       <div class="container result-card">
-        <img src="assets/management-result.jpg" alt="Canteiro de obras visto de cima">
+        <img src="img/obra.jpg" alt="Canteiro de obras visto de cima">
         <div class="result-copy">
           <h2>Do planejamento ao resultado</h2>
-          <p>Na Scale, não acompanhamos apenas a execução. Planejamos, monitoramos, analisamos e agimos. Porque transformar um projeto em realidade exige mais do que construir: exige gestão.</p>
+          <p>Na Scale, não acompanhamos apenas a execução. Planejamos, monitoramos, analisamos e agimos. Porque
+            transformar um projeto em realidade exige mais do que construir: exige gestão.</p>
         </div>
       </div>
     </section>
 
-    <section class="contact-cta">
-      <div class="container contact-cta-inner">
+    <section class="cta">
+      <div class="container cta-inner">
         <h2>Entre em contato conosco</h2>
         <p>Conte com uma engenharia pautada por ética, inovação, compromisso e responsabilidade em cada etapa.</p>
-        <a class="button button-light" href="#contato">Entrar em contato <span aria-hidden="true">→</span></a>
+        <a class="button button-light" href="contato.html">Entrar em contato <span aria-hidden="true">→</span></a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer" id="contato">
     <div class="container footer-grid">
-      <a class="logo footer-logo" href="index.html"><span>SCALE</span></a>
-      <div><h2>Navegação</h2><nav aria-label="Navegação do rodapé"><a href="index.html">Início</a><a href="valores.html">Valores</a><a href="gestao-obras.html">Gestão de Obras</a><a href="index.html#projetos">Projetos</a><a href="index.html#cursos">Cursos</a><a href="#contato">Contato</a><a href="index.html#orcamento">Solicitar Orçamento</a></nav></div>
-      <div><h2>Contato</h2><address><a href="tel:+5511962718932">♧&nbsp; (11) 96271-8932</a><a href="mailto:engscaleprojects@gmail.com">✉&nbsp; engscaleprojects@gmail.com</a><span>⌖&nbsp; São Paulo - SP</span></address></div>
-      <div><h2>Siga-nos</h2><div class="social-links"><a href="#">▣&nbsp; Instagram</a><a href="#">▣&nbsp; LinkedIn</a></div></div>
+      <a class="logo footer-logo" href="index.html" aria-label="Ir para a página inicial">
+        <img src="img/logo.png" alt="Scale Engenharia">
+      </a>
+
+      <div class="footer-column">
+        <h2>Navegação</h2>
+
+        <nav class="footer-navigation" aria-label="Navegação do rodapé">
+          <a href="index.html">Início</a>
+          <a href="historia.html">História</a>
+          <a href="valores.html">Valores</a>
+          <a href="gestao-obras.html">Gestão de Obras</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="cursos.html">Cursos</a>
+          <a href="contato.html">Contato</a>
+          <a href="orcamento.html">Solicitar orçamento</a>
+        </nav>
+      </div>
+
+      <div class="footer-column">
+        <h2>Contato</h2>
+
+        <address class="footer-contact">
+          <button class="footer-action copy-button" type="button" data-copy="(11) 96271-8932"
+            aria-label="Copiar telefone">
+            <img class="footer-icon" src="img/telefone.png" alt="">
+
+            <span>(11) 96271-8932</span>
+          </button>
+
+          <a class="footer-action" href="mailto:engscaleprojects@gmail.com">
+            <img class="footer-icon" src="img/email.png" alt="">
+
+            <span>engscaleprojects@gmail.com</span>
+          </a>
+
+          <button class="footer-action copy-button" type="button" data-copy="São Paulo - SP"
+            aria-label="Copiar endereço">
+            <img class="footer-icon" src="img/localizacao.png" alt="">
+
+            <span>São Paulo - SP</span>
+          </button>
+        </address>
+      </div>
+
+      <div class="footer-column">
+        <h2>Siga-nos</h2>
+
+        <div class="social-links">
+          <a class="footer-action" href="https://www.instagram.com/scale.engsp/" target="_blank"
+            rel="noopener noreferrer">
+            <img class="footer-icon" src="img/instagram.png" alt="">
+
+            <span>Instagram</span>
+          </a>
+
+          <a class="footer-action" href="https://www.linkedin.com/company/scale-engenharia/" target="_blank"
+            rel="noopener noreferrer">
+            <img class="footer-icon" src="img/linkedin.png" alt="">
+
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="container copyright">© 2026 SCALE | ARQUITETURA E ENGENHARIA. TODOS OS DIREITOS RESERVADOS.</div>
+
+    <div class="container copyright">
+      © 2026 SCALE | ARQUITETURA E ENGENHARIA. TODOS OS DIREITOS RESERVADOS.
+    </div>
   </footer>
 </body>
+
 </html>
