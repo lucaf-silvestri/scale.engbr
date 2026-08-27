@@ -4,30 +4,18 @@
 <head>
   <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="Solicite um orçamento personalizado para o seu projeto com a Scale Engenharia."
-  >
+  <meta name="description" content="Solicite um orçamento personalizado para o seu projeto com a Scale Engenharia.">
 
   <title>Solicitar orçamento | Scale Engenharia</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -37,22 +25,11 @@
   <header class="site-header">
     <div class="container header-inner">
 
-      <a
-        class="logo"
-        href="index.html"
-        aria-label="Scale Engenharia - Início"
-      >
-        <img
-          class="logo-header"
-          src="img/logo.png"
-          alt="Scale Engenharia"
-        >
+      <a class="logo" href="index.html" aria-label="Scale Engenharia - Início">
+        <img class="logo-header" src="img/logo.png" alt="Scale Engenharia">
       </a>
 
-      <nav
-        class="main-nav"
-        aria-label="Navegação principal"
-      >
+      <nav class="main-nav" aria-label="Navegação principal">
         <a href="index.html">Início</a>
         <a href="historia.html">História</a>
         <a href="valores.html">Valores</a>
@@ -62,11 +39,7 @@
         <a href="contato.html">Contato</a>
       </nav>
 
-      <a
-        class="button button-outline header-cta"
-        href="orcamento.html"
-        aria-current="page"
-      >
+      <a class="button button-outline header-cta" href="orcamento.html" aria-current="page">
         Solicitar orçamento
       </a>
 
@@ -89,10 +62,7 @@
 
       <div class="budget-layout">
 
-        <section
-          class="process"
-          aria-labelledby="process-title"
-        >
+        <section class="process" aria-labelledby="process-title">
           <h2 id="process-title">Como funciona</h2>
 
           <ol>
@@ -125,86 +95,43 @@
           </ol>
         </section>
 
-        <form
-          class="budget-form"
-          action="https://api.web3forms.com/submit"
-          method="POST"
-        >
+        <form class="budget-form" action="https://api.web3forms.com/submit" method="POST">
 
           <!-- Chave vinculada ao e-mail da Scale -->
-          <input
-            type="hidden"
-            name="access_key"
-            value="ec7edd15-d5e6-44cb-b01c-f1d2e4dd038e"
-          >
+          <input type="hidden" name="access_key" value="ec7edd15-d5e6-44cb-b01c-f1d2e4dd038e">
 
           <!-- Informações do e-mail recebido -->
-          <input
-            type="hidden"
-            name="subject"
-            value="Nova solicitação de orçamento — Site Scale"
-          >
+          <input type="hidden" name="subject" value="Nova solicitação de orçamento — Site Scale">
 
-          <input
-            type="hidden"
-            name="from_name"
-            value="Site da Scale Engenharia"
-          >
+          <input type="hidden" name="from_name" value="Site da Scale Engenharia">
 
           <!-- Campo antispam -->
-          <input
-            type="checkbox"
-            name="botcheck"
-            class="botcheck"
-            tabindex="-1"
-            autocomplete="off"
-            aria-hidden="true"
-          >
+          <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
 
           <div class="form-grid">
 
             <label>
               <span>Nome</span>
 
-              <input
-                type="text"
-                name="Nome"
-                autocomplete="name"
-                required
-              >
+              <input type="text" name="Nome" autocomplete="name" required>
             </label>
 
             <label>
               <span>Telefone</span>
 
-              <input
-                type="tel"
-                name="Telefone"
-                autocomplete="tel"
-                inputmode="tel"
-                required
-              >
+              <input type="tel" name="Telefone" autocomplete="tel" inputmode="tel" required>
             </label>
 
             <label>
               <span>E-mail</span>
 
-              <input
-                type="email"
-                name="email"
-                autocomplete="email"
-                inputmode="email"
-                required
-              >
+              <input type="email" name="email" autocomplete="email" inputmode="email" required>
             </label>
 
             <label>
               <span>Tipo de serviço</span>
 
-              <select
-                name="Tipo de serviço"
-                required
-              >
+              <select name="Tipo de serviço" required>
                 <option value="" selected disabled>
                   Selecione uma opção
                 </option>
@@ -234,10 +161,7 @@
             <label>
               <span>Valor de investimento previsto</span>
 
-              <select
-                name="Investimento previsto"
-                required
-              >
+              <select name="Investimento previsto" required>
                 <option value="" selected disabled>
                   Selecione uma opção
                 </option>
@@ -267,10 +191,7 @@
             <label>
               <span>Como conheceu a Scale?</span>
 
-              <select
-                name="Como conheceu a Scale"
-                required
-              >
+              <select name="Como conheceu a Scale" required>
                 <option value="" selected disabled>
                   Selecione uma opção
                 </option>
@@ -287,30 +208,19 @@
             <label class="full">
               <span>Prazo desejado</span>
 
-              <input
-                type="text"
-                name="Prazo desejado"
-                placeholder="Ex.: 60 dias"
-              >
+              <input type="text" name="Prazo desejado" placeholder="Ex.: 60 dias">
             </label>
 
             <label class="full message-field">
               <span>Conte um pouco sobre o projeto</span>
 
-              <textarea
-                name="Descrição do projeto"
-                rows="6"
-                required
-              ></textarea>
+              <textarea name="Descrição do projeto" rows="6" required></textarea>
             </label>
 
           </div>
 
           <div class="form-actions">
-            <button
-              class="button submit-button"
-              type="submit"
-            >
+            <button class="button submit-button" type="submit">
               Solicitar orçamento
               <span aria-hidden="true">→</span>
             </button>
@@ -324,30 +234,17 @@
     </div>
   </main>
 
-  <footer
-    class="site-footer"
-    id="contato"
-  >
+  <footer class="site-footer" id="contato">
     <div class="container footer-grid">
 
-      <a
-        class="logo footer-logo"
-        href="index.html"
-        aria-label="Ir para a página inicial"
-      >
-        <img
-          src="img/logo.png"
-          alt="Scale Engenharia"
-        >
+      <a class="logo footer-logo" href="index.html" aria-label="Ir para a página inicial">
+        <img src="img/logo.png" alt="Scale Engenharia">
       </a>
 
       <div class="footer-column">
         <h2>Navegação</h2>
 
-        <nav
-          class="footer-navigation"
-          aria-label="Navegação do rodapé"
-        >
+        <nav class="footer-navigation" aria-label="Navegação do rodapé">
           <a href="index.html">Início</a>
           <a href="historia.html">História</a>
           <a href="valores.html">Valores</a>
@@ -364,45 +261,22 @@
 
         <address class="footer-contact">
 
-          <button
-            class="footer-action copy-button"
-            type="button"
-            data-copy="(11) 96271-8932"
-            aria-label="Copiar telefone"
-          >
-            <img
-              class="footer-icon"
-              src="img/telefone.png"
-              alt=""
-            >
+          <button class="footer-action copy-button" type="button" data-copy="(11) 96271-8932"
+            aria-label="Copiar telefone">
+            <img class="footer-icon" src="img/telefone.png" alt="">
 
             <span>(11) 96271-8932</span>
           </button>
 
-          <a
-            class="footer-action"
-            href="mailto:engscaleprojects@gmail.com"
-          >
-            <img
-              class="footer-icon"
-              src="img/email.png"
-              alt=""
-            >
+          <a class="footer-action" href="mailto:engscaleprojects@gmail.com">
+            <img class="footer-icon" src="img/email.png" alt="">
 
             <span>engscaleprojects@gmail.com</span>
           </a>
 
-          <button
-            class="footer-action copy-button"
-            type="button"
-            data-copy="São Paulo - SP"
-            aria-label="Copiar localização"
-          >
-            <img
-              class="footer-icon"
-              src="img/localizacao.png"
-              alt=""
-            >
+          <button class="footer-action copy-button" type="button" data-copy="São Paulo - SP"
+            aria-label="Copiar localização">
+            <img class="footer-icon" src="img/localizacao.png" alt="">
 
             <span>São Paulo - SP</span>
           </button>
@@ -415,32 +289,16 @@
 
         <div class="social-links">
 
-          <a
-            class="footer-action"
-            href="https://www.instagram.com/scale.engsp/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              class="footer-icon"
-              src="img/instagram.png"
-              alt=""
-            >
+          <a class="footer-action" href="https://www.instagram.com/scale.engsp/" target="_blank"
+            rel="noopener noreferrer">
+            <img class="footer-icon" src="img/instagram.png" alt="">
 
             <span>Instagram</span>
           </a>
 
-          <a
-            class="footer-action"
-            href="https://www.linkedin.com/company/scale-engenharia/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              class="footer-icon"
-              src="img/linkedin.png"
-              alt=""
-            >
+          <a class="footer-action" href="https://www.linkedin.com/company/scale-engenharia/" target="_blank"
+            rel="noopener noreferrer">
+            <img class="footer-icon" src="img/linkedin.png" alt="">
 
             <span>LinkedIn</span>
           </a>
