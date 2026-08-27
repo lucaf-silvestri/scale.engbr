@@ -1,20 +1,58 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Solicite um orçamento personalizado para o seu projeto com a Scale Engenharia.">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Solicite um orçamento personalizado para o seu projeto com a Scale Engenharia."
+  >
+
   <title>Solicitar orçamento | Scale Engenharia</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.html" aria-label="Scale Engenharia - Início"><img class="logo-header" src="img/logo.png" alt="Logo"></a>
-      <nav class="main-nav" aria-label="Navegação principal">
+
+      <a
+        class="logo"
+        href="index.html"
+        aria-label="Scale Engenharia - Início"
+      >
+        <img
+          class="logo-header"
+          src="img/logo.png"
+          alt="Scale Engenharia"
+        >
+      </a>
+
+      <nav
+        class="main-nav"
+        aria-label="Navegação principal"
+      >
         <a href="index.html">Início</a>
         <a href="historia.html">História</a>
         <a href="valores.html">Valores</a>
@@ -23,61 +61,293 @@
         <a href="cursos.html">Cursos</a>
         <a href="contato.html">Contato</a>
       </nav>
-      <a class="button button-outline header-cta" href="orcamento.html">Solicitar orçamento</a>
+
+      <a
+        class="button button-outline header-cta"
+        href="orcamento.html"
+        aria-current="page"
+      >
+        Solicitar orçamento
+      </a>
+
     </div>
   </header>
 
   <main class="budget-page">
     <div class="container">
+
       <header class="budget-heading">
         <p class="eyebrow">Vamos conversar</p>
+
         <h1>Solicite seu orçamento</h1>
-        <p>Conte-nos um pouco sobre o seu projeto. Entraremos em contato para entender os<br>detalhes e preparar uma proposta.</p>
+
+        <p>
+          Conte-nos um pouco sobre o seu projeto. Entraremos em contato para entender os<br>
+          detalhes e preparar uma proposta.
+        </p>
       </header>
 
       <div class="budget-layout">
-        <section class="process" aria-labelledby="process-title">
+
+        <section
+          class="process"
+          aria-labelledby="process-title"
+        >
           <h2 id="process-title">Como funciona</h2>
+
           <ol>
-            <li><span class="step-number">01</span><div><strong>Envie as informações</strong><p>Preencha os dados principais do projeto.</p></div></li>
-            <li><span class="step-number">02</span><div><strong>Analisamos a necessidade</strong><p>Nossa equipe entrará em contato para alinhar os detalhes.</p></div></li>
-            <li><span class="step-number">03</span><div><strong>Preparamos sua proposta</strong><p>Elaboramos um orçamento de acordo com o escopo.</p></div></li>
+            <li>
+              <span class="step-number">01</span>
+
+              <div>
+                <strong>Envie as informações</strong>
+                <p>Preencha os dados principais do projeto.</p>
+              </div>
+            </li>
+
+            <li>
+              <span class="step-number">02</span>
+
+              <div>
+                <strong>Analisamos a necessidade</strong>
+                <p>Nossa equipe entrará em contato para alinhar os detalhes.</p>
+              </div>
+            </li>
+
+            <li>
+              <span class="step-number">03</span>
+
+              <div>
+                <strong>Preparamos sua proposta</strong>
+                <p>Elaboramos um orçamento de acordo com o escopo.</p>
+              </div>
+            </li>
           </ol>
         </section>
 
-        <form class="budget-form" action="https://api.web3forms.com/submit" method="POST">
-          <!-- Substitua pelo access key criado gratuitamente no Web3Forms. -->
-          <input type="hidden" name="access_key" value="ADICIONE_SUA_CHAVE_WEB3FORMS">
-          <input type="hidden" name="subject" value="Nova solicitação de orçamento — Site Scale">
-          <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off">
+        <form
+          class="budget-form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+
+          <!-- Chave vinculada ao e-mail da Scale -->
+          <input
+            type="hidden"
+            name="access_key"
+            value="ec7edd15-d5e6-44cb-b01c-f1d2e4dd038e"
+          >
+
+          <!-- Informações do e-mail recebido -->
+          <input
+            type="hidden"
+            name="subject"
+            value="Nova solicitação de orçamento — Site Scale"
+          >
+
+          <input
+            type="hidden"
+            name="from_name"
+            value="Site da Scale Engenharia"
+          >
+
+          <!-- Campo antispam -->
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="botcheck"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          >
 
           <div class="form-grid">
-            <label><span>Nome</span><input type="text" name="nome" autocomplete="name" required></label>
-            <label><span>Telefone</span><input type="tel" name="telefone" autocomplete="tel" required></label>
-            <label><span>E-mail</span><input type="email" name="email" autocomplete="email" required></label>
-            <label><span>Tipo de serviço</span><select name="tipo_servico" required><option value="" selected disabled></option><option>Projetos de engenharia</option><option>Levantamentos quantitativos</option><option>Consultoria técnica</option><option>Gestão de obras</option><option>Outro</option></select></label>
-            <label><span>Valor de investimento previsto</span><select name="investimento" required><option value="" selected disabled></option><option>Até R$ 5.000</option><option>De R$ 5.000 a R$ 15.000</option><option>De R$ 15.000 a R$ 30.000</option><option>Acima de R$ 30.000</option><option>A definir</option></select></label>
-            <label><span>Como conheceu a Scale?</span><select name="origem" required><option value="" selected disabled></option><option>Instagram</option><option>LinkedIn</option><option>Google</option><option>Indicação</option><option>Evento</option><option>Outro</option></select></label>
-            <label class="full"><span>Prazo desejado</span><input type="text" name="prazo" placeholder="Ex.: 60 dias"></label>
-            <label class="full message-field"><span>Conte um pouco sobre o projeto</span><textarea name="mensagem" required></textarea></label>
+
+            <label>
+              <span>Nome</span>
+
+              <input
+                type="text"
+                name="Nome"
+                autocomplete="name"
+                required
+              >
+            </label>
+
+            <label>
+              <span>Telefone</span>
+
+              <input
+                type="tel"
+                name="Telefone"
+                autocomplete="tel"
+                inputmode="tel"
+                required
+              >
+            </label>
+
+            <label>
+              <span>E-mail</span>
+
+              <input
+                type="email"
+                name="email"
+                autocomplete="email"
+                inputmode="email"
+                required
+              >
+            </label>
+
+            <label>
+              <span>Tipo de serviço</span>
+
+              <select
+                name="Tipo de serviço"
+                required
+              >
+                <option value="" selected disabled>
+                  Selecione uma opção
+                </option>
+
+                <option value="Projetos de engenharia">
+                  Projetos de engenharia
+                </option>
+
+                <option value="Levantamentos quantitativos">
+                  Levantamentos quantitativos
+                </option>
+
+                <option value="Consultoria técnica">
+                  Consultoria técnica
+                </option>
+
+                <option value="Gestão de obras">
+                  Gestão de obras
+                </option>
+
+                <option value="Outro">
+                  Outro
+                </option>
+              </select>
+            </label>
+
+            <label>
+              <span>Valor de investimento previsto</span>
+
+              <select
+                name="Investimento previsto"
+                required
+              >
+                <option value="" selected disabled>
+                  Selecione uma opção
+                </option>
+
+                <option value="Até R$ 5.000">
+                  Até R$ 5.000
+                </option>
+
+                <option value="De R$ 5.000 a R$ 15.000">
+                  De R$ 5.000 a R$ 15.000
+                </option>
+
+                <option value="De R$ 15.000 a R$ 30.000">
+                  De R$ 15.000 a R$ 30.000
+                </option>
+
+                <option value="Acima de R$ 30.000">
+                  Acima de R$ 30.000
+                </option>
+
+                <option value="A definir">
+                  A definir
+                </option>
+              </select>
+            </label>
+
+            <label>
+              <span>Como conheceu a Scale?</span>
+
+              <select
+                name="Como conheceu a Scale"
+                required
+              >
+                <option value="" selected disabled>
+                  Selecione uma opção
+                </option>
+
+                <option value="Instagram">Instagram</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="Google">Google</option>
+                <option value="Indicação">Indicação</option>
+                <option value="Evento">Evento</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </label>
+
+            <label class="full">
+              <span>Prazo desejado</span>
+
+              <input
+                type="text"
+                name="Prazo desejado"
+                placeholder="Ex.: 60 dias"
+              >
+            </label>
+
+            <label class="full message-field">
+              <span>Conte um pouco sobre o projeto</span>
+
+              <textarea
+                name="Descrição do projeto"
+                rows="6"
+                required
+              ></textarea>
+            </label>
+
           </div>
 
-          <div class="form-actions"><button class="button submit-button" type="submit">Solicitar orçamento <span>→</span></button><p>Responderemos o mais breve possível!</p></div>
+          <div class="form-actions">
+            <button
+              class="button submit-button"
+              type="submit"
+            >
+              Solicitar orçamento
+              <span aria-hidden="true">→</span>
+            </button>
+
+            <p>Responderemos o mais breve possível!</p>
+          </div>
+
         </form>
+
       </div>
     </div>
   </main>
 
-  <footer class="site-footer" id="contato">
+  <footer
+    class="site-footer"
+    id="contato"
+  >
     <div class="container footer-grid">
-      <a class="logo footer-logo" href="index.html" aria-label="Ir para a página inicial">
-        <img src="img/logo.png" alt="Scale Engenharia">
+
+      <a
+        class="logo footer-logo"
+        href="index.html"
+        aria-label="Ir para a página inicial"
+      >
+        <img
+          src="img/logo.png"
+          alt="Scale Engenharia"
+        >
       </a>
 
       <div class="footer-column">
         <h2>Navegação</h2>
 
-        <nav class="footer-navigation" aria-label="Navegação do rodapé">
+        <nav
+          class="footer-navigation"
+          aria-label="Navegação do rodapé"
+        >
           <a href="index.html">Início</a>
           <a href="historia.html">História</a>
           <a href="valores.html">Valores</a>
@@ -93,25 +363,50 @@
         <h2>Contato</h2>
 
         <address class="footer-contact">
-          <button class="footer-action copy-button" type="button" data-copy="(11) 96271-8932"
-            aria-label="Copiar telefone">
-            <img class="footer-icon" src="img/telefone.png" alt="">
+
+          <button
+            class="footer-action copy-button"
+            type="button"
+            data-copy="(11) 96271-8932"
+            aria-label="Copiar telefone"
+          >
+            <img
+              class="footer-icon"
+              src="img/telefone.png"
+              alt=""
+            >
 
             <span>(11) 96271-8932</span>
           </button>
 
-          <a class="footer-action" href="mailto:engscaleprojects@gmail.com">
-            <img class="footer-icon" src="img/email.png" alt="">
+          <a
+            class="footer-action"
+            href="mailto:engscaleprojects@gmail.com"
+          >
+            <img
+              class="footer-icon"
+              src="img/email.png"
+              alt=""
+            >
 
             <span>engscaleprojects@gmail.com</span>
           </a>
 
-          <button class="footer-action copy-button" type="button" data-copy="São Paulo - SP"
-            aria-label="Copiar endereço">
-            <img class="footer-icon" src="img/localizacao.png" alt="">
+          <button
+            class="footer-action copy-button"
+            type="button"
+            data-copy="São Paulo - SP"
+            aria-label="Copiar localização"
+          >
+            <img
+              class="footer-icon"
+              src="img/localizacao.png"
+              alt=""
+            >
 
             <span>São Paulo - SP</span>
           </button>
+
         </address>
       </div>
 
@@ -119,26 +414,78 @@
         <h2>Siga-nos</h2>
 
         <div class="social-links">
-          <a class="footer-action" href="https://www.instagram.com/scale.engsp/" target="_blank"
-            rel="noopener noreferrer">
-            <img class="footer-icon" src="img/instagram.png" alt="">
+
+          <a
+            class="footer-action"
+            href="https://www.instagram.com/scale.engsp/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="footer-icon"
+              src="img/instagram.png"
+              alt=""
+            >
 
             <span>Instagram</span>
           </a>
 
-          <a class="footer-action" href="https://www.linkedin.com/company/scale-engenharia/" target="_blank"
-            rel="noopener noreferrer">
-            <img class="footer-icon" src="img/linkedin.png" alt="">
+          <a
+            class="footer-action"
+            href="https://www.linkedin.com/company/scale-engenharia/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="footer-icon"
+              src="img/linkedin.png"
+              alt=""
+            >
 
             <span>LinkedIn</span>
           </a>
+
         </div>
       </div>
+
     </div>
 
     <div class="container copyright">
       © 2026 SCALE | ARQUITETURA E ENGENHARIA. TODOS OS DIREITOS RESERVADOS.
     </div>
   </footer>
+
+  <script>
+    document.querySelectorAll(".copy-button").forEach(function (button) {
+      button.addEventListener("click", async function () {
+        const textToCopy = button.dataset.copy;
+        const textElement = button.querySelector("span");
+        const originalText = textElement.textContent;
+
+        try {
+          await navigator.clipboard.writeText(textToCopy);
+        } catch (error) {
+          const temporaryInput = document.createElement("textarea");
+
+          temporaryInput.value = textToCopy;
+          temporaryInput.style.position = "fixed";
+          temporaryInput.style.opacity = "0";
+
+          document.body.appendChild(temporaryInput);
+          temporaryInput.select();
+          document.execCommand("copy");
+          temporaryInput.remove();
+        }
+
+        textElement.textContent = "Copiado!";
+
+        setTimeout(function () {
+          textElement.textContent = originalText;
+        }, 1500);
+      });
+    });
+  </script>
+
 </body>
+
 </html>
