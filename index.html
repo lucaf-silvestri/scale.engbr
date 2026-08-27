@@ -15,24 +15,26 @@
 </head>
 
 <body>
+  <header class="site-header site-header-index">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Scale Engenharia - Início"><img class="logo-header"
+          src="img/logo.png" alt="Logo"></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+        <span class="menu-toggle-lines" aria-hidden="true"></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a class="active" href="index.html">Início</a>
+        <a href="historia.html">História</a>
+        <a href="valores.html">Valores</a>
+        <a href="gestao-obras.html">Gestão de Obras</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <a class="button button-outline header-cta" href="orcamento.html">Solicitar orçamento</a>
+    </div>
+  </header>
   <section class="hero" id="inicio">
-    <header class="site-header site-header-index">
-      <div class="container header-inner">
-        <a class="logo" href="index.html" aria-label="Scale Engenharia - Início"><img class="logo-header"
-            src="img/logo.png" alt="Logo"></a>
-        <nav class="main-nav" aria-label="Navegação principal">
-          <a class="active" href="index.html">Início</a>
-          <a href="historia.html">História</a>
-          <a href="valores.html">Valores</a>
-          <a href="gestao-obras.html">Gestão de Obras</a>
-          <a href="projetos.html">Projetos</a>
-          <a href="cursos.html">Cursos</a>
-          <a href="contato.html">Contato</a>
-        </nav>
-        <a class="button button-outline header-cta" href="orcamento.html">Solicitar orçamento</a>
-      </div>
-    </header>
-
     <div class="container hero-content">
       <h1>Projetos que<br>constroem o futuro</h1>
       <p>Soluções completas de engenharia com tecnologia, precisão e eficiência em cada parte do projeto.</p>
@@ -300,6 +302,58 @@
   </footer>
 
   <script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const mainNavigation = document.querySelector(".main-nav");
+
+    if (menuButton && mainNavigation) {
+      function closeMenu() {
+        mainNavigation.classList.remove("is-open");
+        document.body.classList.remove("menu-open");
+
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Abrir menu");
+      }
+
+      menuButton.addEventListener("click", function () {
+        const menuIsOpen =
+          mainNavigation.classList.toggle("is-open");
+
+        document.body.classList.toggle(
+          "menu-open",
+          menuIsOpen
+        );
+
+        menuButton.setAttribute(
+          "aria-expanded",
+          String(menuIsOpen)
+        );
+
+        menuButton.setAttribute(
+          "aria-label",
+          menuIsOpen ? "Fechar menu" : "Abrir menu"
+        );
+      });
+
+      mainNavigation
+        .querySelectorAll("a")
+        .forEach(function (link) {
+          link.addEventListener("click", closeMenu);
+        });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closeMenu();
+        }
+      });
+
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 760) {
+          closeMenu();
+        }
+      });
+    }
+
+
     document.querySelectorAll(".copy-button").forEach(function (button) {
       button.addEventListener("click", async function () {
         const textToCopy = button.dataset.copy;

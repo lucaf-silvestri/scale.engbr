@@ -61,10 +61,11 @@ p {
 }
 
 .service-icon {
+    display: block;
     width: 65px;
-    align-self: center;
-    justify-self: center;
-    margin-bottom: 25px;
+    height: 65px;
+    margin: 0 auto 25px;
+    object-fit: contain;
 }
 
 .differential-icon {
@@ -1372,6 +1373,11 @@ main:has(.values-intro) .contact-cta {
     width: 22px;
     height: 22px;
     object-fit: contain;
+    transition: filter 0.25s ease;
+}
+
+.contact-item:hover .contact-icon img {
+    filter: brightness(0);
 }
 
 .icon-mail {
@@ -1497,6 +1503,9 @@ main:has(.values-intro) .contact-cta {
 
 .budget-form {
     padding-left: 28px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .botcheck {
@@ -2570,5 +2579,249 @@ main:has(.values-intro) .contact-cta {
 @media (max-width: 520px) {
     .history-intro {
         padding-top: 140px;
+    }
+}
+
+@media (max-width: 760px) {
+    .site-header,
+    .site-header.site-header-index,
+    .site-header.site-header-index.is-scrolled {
+        background: #1b1b1b !important;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+        isolation: isolate;
+    }
+
+    .site-header::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: #1b1b1b;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+}
+
+.botcheck {
+    display: none !important;
+}
+
+.form-result {
+    display: none;
+}
+
+.form-result-success {
+    display: block;
+    padding: 38px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    text-align: center;
+}
+
+.form-result-success strong {
+    display: block;
+    margin-bottom: 12px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.form-result-success p {
+    max-width: 500px;
+    margin: 0 auto;
+    color: #e2e2e2;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.form-result-error {
+    display: block;
+    margin-top: 20px;
+    color: #ffb4b4;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.submit-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+.budget-form.is-sent .form-grid,
+.budget-form.is-sent .form-actions {
+    display: none;
+}
+
+@media (max-width: 520px) {
+    .form-result-success {
+        padding: 30px 20px;
+    }
+
+    .form-result-success strong {
+        font-size: 18px;
+    }
+}
+
+/* ==================== MENU HAMBÚRGUER ==================== */
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 760px) {
+    .site-header,
+    .site-header-index,
+    .site-header.site-header-index.is-scrolled {
+        height: 72px !important;
+        padding: 0 !important;
+        overflow: visible;
+        background: #1b1b1b !important;
+    }
+
+    .header-inner {
+        position: relative;
+        display: grid;
+        width: min(calc(100% - 32px), var(--container));
+        height: 72px !important;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 72px;
+        gap: 16px;
+        padding: 0;
+    }
+
+    .logo-header {
+        width: auto;
+        height: 50px;
+    }
+
+    .menu-toggle {
+        position: relative;
+        z-index: 10002;
+        display: inline-flex;
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .menu-toggle-lines,
+    .menu-toggle-lines::before,
+    .menu-toggle-lines::after {
+        display: block;
+        width: 21px;
+        height: 2px;
+        border-radius: 2px;
+        background: currentColor;
+        transition:
+            transform 0.25s ease,
+            opacity 0.25s ease;
+    }
+
+    .menu-toggle-lines {
+        position: relative;
+    }
+
+    .menu-toggle-lines::before,
+    .menu-toggle-lines::after {
+        content: "";
+        position: absolute;
+        left: 0;
+    }
+
+    .menu-toggle-lines::before {
+        top: -7px;
+    }
+
+    .menu-toggle-lines::after {
+        top: 7px;
+    }
+
+    .menu-toggle[aria-expanded="true"] .menu-toggle-lines {
+        background: transparent;
+    }
+
+    .menu-toggle[aria-expanded="true"] .menu-toggle-lines::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    .menu-toggle[aria-expanded="true"] .menu-toggle-lines::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 72px;
+        right: 0;
+        left: 0;
+        z-index: 10001;
+        display: flex;
+        width: 100%;
+        max-width: none;
+        max-height: 0;
+        padding: 0 24px;
+        border-top: 1px solid transparent;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        overflow: hidden;
+        visibility: hidden;
+        background: #1b1b1b;
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.35);
+        opacity: 0;
+        transform: translateY(-8px);
+        transition:
+            max-height 0.35s ease,
+            padding 0.35s ease,
+            opacity 0.25s ease,
+            transform 0.25s ease,
+            visibility 0.35s;
+    }
+
+    .main-nav.is-open {
+        max-height: calc(100vh - 72px);
+        padding-top: 12px;
+        padding-bottom: 18px;
+        border-top-color: rgba(255, 255, 255, 0.12);
+        overflow-y: auto;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .main-nav a {
+        width: 100%;
+        padding: 13px 4px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 12px;
+        text-align: left;
+        white-space: normal;
+    }
+
+    .main-nav a:last-child {
+        border-bottom: 0;
+    }
+
+    .main-nav a::after {
+        display: none;
+    }
+
+    .header-cta {
+        display: none;
+    }
+
+    body.menu-open {
+        overflow: hidden;
     }
 }
