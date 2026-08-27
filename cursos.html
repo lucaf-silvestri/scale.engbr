@@ -19,14 +19,17 @@
     <div class="container header-inner">
       <a class="logo" href="index.html" aria-label="Scale Engenharia - Início"><img class="logo-header"
           src="img/logo.png" alt="Logo"></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+        <span class="menu-toggle-lines" aria-hidden="true"></span>
+      </button>
       <nav class="main-nav" aria-label="Navegação principal">
         <a href="index.html">Início</a>
         <a href="historia.html">História</a>
         <a href="valores.html">Valores</a>
         <a href="gestao-obras.html">Gestão de Obras</a>
         <a href="projetos.html">Projetos</a>
-        <a class="active" href="cursos.html">Cursos</a>
-        <a href="contato.html">Contato</a>
+        <a href="cursos.html">Cursos</a>
+        <a class="active" href="contato.html">Contato</a>
       </nav>
       <a class="button button-outline header-cta" href="orcamento.html">Solicitar orçamento</a>
     </div>
@@ -169,5 +172,118 @@
     </div>
   </footer>
 </body>
+
+<script>
+  /* MENU HAMBÚRGUER */
+
+  const menuButton = document.querySelector(".menu-toggle");
+  const mainNavigation = document.querySelector(".main-nav");
+
+  if (menuButton && mainNavigation) {
+    function closeMenu() {
+      mainNavigation.classList.remove("is-open");
+      document.body.classList.remove("menu-open");
+
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Abrir menu");
+    }
+
+    menuButton.addEventListener("click", function () {
+      const menuIsOpen =
+        mainNavigation.classList.toggle("is-open");
+
+      document.body.classList.toggle(
+        "menu-open",
+        menuIsOpen
+      );
+
+      menuButton.setAttribute(
+        "aria-expanded",
+        String(menuIsOpen)
+      );
+
+      menuButton.setAttribute(
+        "aria-label",
+        menuIsOpen ? "Fechar menu" : "Abrir menu"
+      );
+    });
+
+    mainNavigation
+      .querySelectorAll("a")
+      .forEach(function (link) {
+        link.addEventListener("click", closeMenu);
+      });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        closeMenu();
+      }
+    });
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 760) {
+        closeMenu();
+      }
+    });
+  }
+
+
+  /* COPIAR INFORMAÇÕES DO FOOTER */
+
+  document
+    .querySelectorAll(".copy-button")
+    .forEach(function (button) {
+      button.addEventListener("click", async function () {
+        const textToCopy = button.dataset.copy;
+        const textElement = button.querySelector("span");
+        const originalText = textElement.textContent;
+
+        try {
+          await navigator.clipboard.writeText(textToCopy);
+        } catch (error) {
+          const temporaryInput =
+            document.createElement("textarea");
+
+          temporaryInput.value = textToCopy;
+          temporaryInput.style.position = "fixed";
+          temporaryInput.style.opacity = "0";
+
+          document.body.appendChild(temporaryInput);
+          temporaryInput.select();
+          document.execCommand("copy");
+          temporaryInput.remove();
+        }
+
+        textElement.textContent = "Copiado!";
+
+        setTimeout(function () {
+          textElement.textContent = originalText;
+        }, 1500);
+      });
+    });
+
+
+  /* FUNDO DO HEADER DA HOME */
+
+  const homeHeader =
+    document.querySelector(".site-header-index");
+
+  if (homeHeader) {
+    function atualizarHeader() {
+      homeHeader.classList.toggle(
+        "is-scrolled",
+        window.scrollY > 60
+      );
+    }
+
+    atualizarHeader();
+
+    window.addEventListener(
+      "scroll",
+      atualizarHeader,
+      {passive: true}
+    );
+  }
+</script>
 
 </html>
