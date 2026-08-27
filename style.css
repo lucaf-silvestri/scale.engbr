@@ -228,7 +228,7 @@ p {
     isolation: isolate;
     display: grid;
     place-items: center;
-    background: url("img/vecteezy_person-s-engineer-hand-drawing-plan-on-blue-print-with_7359670.JPG") center/cover no-repeat;
+    background: url("img/vecteezy_person-s-engineer-hand-drawing-plan-on-blue-print-with_7359670.webp") center/cover no-repeat;
 }
 
 .cta::before {
@@ -420,7 +420,7 @@ main:has(.values-intro) .contact-cta {
     position: absolute;
     inset: 0 0 0 0;
     z-index: -2;
-    background: url("img/hero2.jpg") center / cover no-repeat;
+    background: url("img/hero2.webp") center / cover no-repeat;
     filter: saturate(.65) brightness(.9);
     background-position: center 0;
 }
@@ -738,24 +738,24 @@ main:has(.values-intro) .contact-cta {
 }
 
 .value-one::before {
-    background-image: url("img/1.jpg");
+    background-image: url("img/1.webp");
     
 }
 
 .value-two::before {
-    background-image: url("img/2.jpg");
+    background-image: url("img/2.webp");
 }
 
 .value-three::before {
-    background-image: url("img/3.jpg");
+    background-image: url("img/3.webp");
 }
 
 .value-four::before {
-    background-image: url("img/4.jpg");
+    background-image: url("img/4.webp");
 }
 
 .value-five::before {
-    background-image: url("img/5.jpg");
+    background-image: url("img/5.webp");
 }
 
 .value-layout {
@@ -919,7 +919,7 @@ main:has(.values-intro) .contact-cta {
 
 .technology-image {
     min-height: 335px;
-    background: linear-gradient(90deg, var(--black) 0%, rgba(27, 27, 27, .38) 28%, rgba(27, 27, 27, .1) 100%), url("img/gestao.jpg") center/cover no-repeat;
+    background: linear-gradient(90deg, var(--black) 0%, rgba(27, 27, 27, .38) 28%, rgba(27, 27, 27, .1) 100%), url("img/gestao.webp") center/cover no-repeat;
 }
 
 .timeline-section {
