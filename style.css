@@ -2672,7 +2672,7 @@ main:has(.values-intro) .contact-cta {
     display: none;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1150px) {
     .site-header,
     .site-header-index,
     .site-header.site-header-index.is-scrolled {
