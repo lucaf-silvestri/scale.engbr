@@ -3084,3 +3084,136 @@ body.modal-open {
         transform: translateX(50%);
     }
 }
+
+/* ==================== POLÍTICA DE PRIVACIDADE ==================== */
+
+.privacy-page {
+    min-height: 100vh;
+    padding: 155px 0 90px;
+    background: var(--dark);
+}
+
+.privacy-container {
+    max-width: 1050px;
+}
+
+.privacy-heading {
+    padding-bottom: 38px;
+    border-bottom: 1px solid var(--line);
+}
+
+.privacy-heading h1 {
+    margin: 10px 0 14px;
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.08;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.privacy-heading > p:last-child {
+    margin: 0;
+    color: #bdbdbd;
+    font-size: 13px;
+}
+
+.privacy-content {
+    max-width: 860px;
+    padding-top: 42px;
+}
+
+.privacy-content section {
+    margin-bottom: 44px;
+}
+
+.privacy-content h2 {
+    margin-bottom: 16px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.privacy-content h3 {
+    margin: 24px 0 10px;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.privacy-content p,
+.privacy-content li {
+    color: #d5d5d5;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.privacy-content p {
+    margin: 0 0 14px;
+}
+
+.privacy-content ul {
+    margin: 16px 0 20px;
+    padding-left: 22px;
+}
+
+.privacy-content li {
+    margin-bottom: 7px;
+}
+
+.privacy-content a {
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.privacy-contact-box {
+    margin-top: 20px;
+    padding: 22px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.privacy-contact-box p {
+    margin-bottom: 8px;
+}
+
+.privacy-contact-box p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 760px) {
+    .privacy-page {
+        padding: 125px 0 65px;
+    }
+
+    .privacy-heading {
+        padding-bottom: 28px;
+    }
+
+    .privacy-heading h1 {
+        font-size: 34px;
+    }
+
+    .privacy-content {
+        padding-top: 32px;
+    }
+
+    .privacy-content section {
+        margin-bottom: 36px;
+    }
+
+    .privacy-content h2 {
+        font-size: 18px;
+    }
+
+    .privacy-content p,
+    .privacy-content li {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    .privacy-contact-box {
+        padding: 18px;
+    }
+}
