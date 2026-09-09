@@ -3,26 +3,78 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conheça os projetos realizados pela Scale Engenharia.">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Conheça os projetos realizados pela Scale Engenharia."
+  >
+
   <title>Projetos | Scale Engenharia</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="icon" type="image/png" href="img/icon.png">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="img/icon.png"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <!-- ==================== HEADER ==================== -->
+
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.html" aria-label="Scale Engenharia - Início"><img class="logo-header"
-          src="img/logo.png" alt="Logo"></a>
-      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
-        <span class="menu-toggle-lines" aria-hidden="true"></span>
+
+      <a
+        class="logo"
+        href="index.html"
+        aria-label="Scale Engenharia - Início"
+      >
+        <img
+          class="logo-header"
+          src="img/logo.png"
+          alt="Scale Engenharia"
+        >
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span
+          class="menu-toggle-lines"
+          aria-hidden="true"
+        ></span>
       </button>
-      <nav class="main-nav" aria-label="Navegação principal">
+
+      <nav
+        class="main-nav"
+        id="main-nav"
+        aria-label="Navegação principal"
+      >
         <a href="index.html">Início</a>
         <a href="historia.html">História</a>
         <a href="valores.html">Valores</a>
@@ -31,73 +83,270 @@
         <a href="cursos.html">Cursos</a>
         <a href="contato.html">Contato</a>
       </nav>
-      <a class="button button-outline header-cta" href="orcamento.html">Solicitar orçamento</a>
+
+      <a
+        class="button button-outline header-cta"
+        href="orcamento.html"
+      >
+        Solicitar orçamento
+      </a>
+
     </div>
   </header>
 
+
+  <!-- ==================== CONTEÚDO ==================== -->
+
   <main class="portfolio">
     <div class="container">
+
       <header class="portfolio-heading">
         <p class="eyebrow">Nosso portfólio</p>
+
         <h1>Projetos realizados</h1>
-        <p>Conheça alguns dos projetos desenvolvidos pela Scale</p>
+
+        <p>
+          Conheça alguns dos projetos desenvolvidos pela Scale
+        </p>
       </header>
 
-      <section class="projects-grid" aria-label="Projetos realizados">
+
+      <!-- ==================== PROJETOS ==================== -->
+
+      <section
+        class="projects-grid"
+        aria-label="Projetos realizados"
+      >
+
+        <!-- CLUB LIFE -->
+
         <article class="project-card">
-          <div class="project-image"><img src="img/parth-savani-nZz9i0YxEQw-unsplash.webp"
-              alt="Empreendimento em construção"><button class="arrow arrow-left"
-              aria-label="Imagem anterior">‹</button><button class="arrow arrow-right"
-              aria-label="Próxima imagem">›</button></div>
-          <div class="project-info">
-            <h2>Nome do projeto</h2>
-            <p>Projeto · Tipo do projeto</p>
+
+          <div
+            class="project-image"
+            data-prefix="club"
+            data-project="Club Life"
+          >
+            <img
+              class="project-main-image"
+              src="img/club (1).webp"
+              alt="Projeto Club Life — imagem 1"
+            >
+
+            <button
+              class="arrow arrow-left"
+              type="button"
+              aria-label="Ver imagem anterior do projeto Club Life"
+              hidden
+            >
+              ‹
+            </button>
+
+            <button
+              class="arrow arrow-right"
+              type="button"
+              aria-label="Ver próxima imagem do projeto Club Life"
+              hidden
+            >
+              ›
+            </button>
+
+            <div
+              class="carousel-counter"
+              aria-live="polite"
+              hidden
+            ></div>
           </div>
+
+          <div class="project-info">
+            <h2>Club Life</h2>
+
+            <p>
+              Arquitetura, Estrutura, Elétrica e Renderizações 3D
+            </p>
+          </div>
+
         </article>
+
+
+        <!-- RESIDÊNCIA ALBERTO -->
+
         <article class="project-card">
-          <div class="project-image"><img src="img/parth-savani-nZz9i0YxEQw-unsplash.webp"
-              alt="Empreendimento em construção"><button class="arrow arrow-left"
-              aria-label="Imagem anterior">‹</button><button class="arrow arrow-right"
-              aria-label="Próxima imagem">›</button></div>
-          <div class="project-info">
-            <h2>Nome do projeto</h2>
-            <p>Projeto · Tipo do projeto</p>
+
+          <div
+            class="project-image"
+            data-prefix="alberto"
+            data-project="Residência Alberto"
+          >
+            <img
+              class="project-main-image"
+              src="img/alberto (1).webp"
+              alt="Residência Alberto — imagem 1"
+            >
+
+            <button
+              class="arrow arrow-left"
+              type="button"
+              aria-label="Ver imagem anterior da Residência Alberto"
+              hidden
+            >
+              ‹
+            </button>
+
+            <button
+              class="arrow arrow-right"
+              type="button"
+              aria-label="Ver próxima imagem da Residência Alberto"
+              hidden
+            >
+              ›
+            </button>
+
+            <div
+              class="carousel-counter"
+              aria-live="polite"
+              hidden
+            ></div>
           </div>
+
+          <div class="project-info">
+            <h2>Residência Alberto</h2>
+
+            <p>
+              Arquitetura, Elétrica e Hidráulica
+            </p>
+          </div>
+
         </article>
+
+
+        <!-- EDIFÍCIO VITÓRIA -->
+
         <article class="project-card">
-          <div class="project-image"><img src="img/parth-savani-nZz9i0YxEQw-unsplash.webp"
-              alt="Empreendimento em construção"><button class="arrow arrow-left"
-              aria-label="Imagem anterior">‹</button><button class="arrow arrow-right"
-              aria-label="Próxima imagem">›</button></div>
-          <div class="project-info">
-            <h2>Nome do projeto</h2>
-            <p>Projeto · Tipo do projeto</p>
+
+          <div
+            class="project-image"
+            data-prefix="vitoria"
+            data-project="Edifício Vitória"
+          >
+            <img
+              class="project-main-image"
+              src="img/vitoria (1).webp"
+              alt="Edifício Vitória — imagem 1"
+            >
+
+            <button
+              class="arrow arrow-left"
+              type="button"
+              aria-label="Ver imagem anterior do Edifício Vitória"
+              hidden
+            >
+              ‹
+            </button>
+
+            <button
+              class="arrow arrow-right"
+              type="button"
+              aria-label="Ver próxima imagem do Edifício Vitória"
+              hidden
+            >
+              ›
+            </button>
+
+            <div
+              class="carousel-counter"
+              aria-live="polite"
+              hidden
+            ></div>
           </div>
+
+          <div class="project-info">
+            <h2>Edifício Vitória</h2>
+
+            <p>
+              Arquitetura e aprovação na prefeitura
+            </p>
+          </div>
+
         </article>
+
+
+        <!-- LABORATÓRIO -->
+
         <article class="project-card">
-          <div class="project-image"><img src="img/parth-savani-nZz9i0YxEQw-unsplash.webp"
-              alt="Empreendimento em construção"><button class="arrow arrow-left"
-              aria-label="Imagem anterior">‹</button><button class="arrow arrow-right"
-              aria-label="Próxima imagem">›</button></div>
-          <div class="project-info">
-            <h2>Nome do projeto</h2>
-            <p>Projeto · Tipo do projeto</p>
+
+          <div
+            class="project-image"
+            data-prefix="laboratorio"
+            data-project="Laboratório"
+          >
+            <img
+              class="project-main-image"
+              src="img/laboratorio (1).webp"
+              alt="Laboratório — imagem 1"
+            >
+
+            <button
+              class="arrow arrow-left"
+              type="button"
+              aria-label="Ver imagem anterior do Laboratório"
+              hidden
+            >
+              ‹
+            </button>
+
+            <button
+              class="arrow arrow-right"
+              type="button"
+              aria-label="Ver próxima imagem do Laboratório"
+              hidden
+            >
+              ›
+            </button>
+
+            <div
+              class="carousel-counter"
+              aria-live="polite"
+              hidden
+            ></div>
           </div>
+
+          <div class="project-info">
+            <h2>Laboratório</h2>
+
+            <p>Projeto Elétrico</p>
+          </div>
+
         </article>
+
       </section>
     </div>
   </main>
 
+
+  <!-- ==================== FOOTER ==================== -->
+
   <footer class="site-footer" id="contato">
     <div class="container footer-grid">
-      <a class="logo footer-logo" href="index.html" aria-label="Ir para a página inicial">
-        <img src="img/logo.png" alt="Scale Engenharia">
+
+      <a
+        class="logo footer-logo"
+        href="index.html"
+        aria-label="Ir para a página inicial"
+      >
+        <img
+          src="img/logo.png"
+          alt="Scale Engenharia"
+        >
       </a>
 
       <div class="footer-column">
         <h2>Navegação</h2>
 
-        <nav class="footer-navigation" aria-label="Navegação do rodapé">
+        <nav
+          class="footer-navigation"
+          aria-label="Navegação do rodapé"
+        >
           <a href="index.html">Início</a>
           <a href="historia.html">História</a>
           <a href="valores.html">Valores</a>
@@ -113,25 +362,50 @@
         <h2>Contato</h2>
 
         <address class="footer-contact">
-          <button class="footer-action copy-button" type="button" data-copy="(11) 96271-8932"
-            aria-label="Copiar telefone">
-            <img class="footer-icon" src="img/telefone.png" alt="">
+
+          <button
+            class="footer-action copy-button"
+            type="button"
+            data-copy="(11) 96271-8932"
+            aria-label="Copiar telefone"
+          >
+            <img
+              class="footer-icon"
+              src="img/telefone.png"
+              alt=""
+            >
 
             <span>(11) 96271-8932</span>
           </button>
 
-          <a class="footer-action" href="mailto:engscaleprojects@gmail.com">
-            <img class="footer-icon" src="img/email.png" alt="">
+          <a
+            class="footer-action"
+            href="mailto:engscaleprojects@gmail.com"
+          >
+            <img
+              class="footer-icon"
+              src="img/email.png"
+              alt=""
+            >
 
             <span>engscaleprojects@gmail.com</span>
           </a>
 
-          <button class="footer-action copy-button" type="button" data-copy="São Paulo - SP"
-            aria-label="Copiar endereço">
-            <img class="footer-icon" src="img/localizacao.png" alt="">
+          <button
+            class="footer-action copy-button"
+            type="button"
+            data-copy="São Paulo - SP"
+            aria-label="Copiar localização"
+          >
+            <img
+              class="footer-icon"
+              src="img/localizacao.png"
+              alt=""
+            >
 
             <span>São Paulo - SP</span>
           </button>
+
         </address>
       </div>
 
@@ -139,140 +413,705 @@
         <h2>Siga-nos</h2>
 
         <div class="social-links">
-          <a class="footer-action" href="https://www.instagram.com/scale.engsp/" target="_blank"
-            rel="noopener noreferrer">
-            <img class="footer-icon" src="img/instagram.png" alt="">
+
+          <a
+            class="footer-action"
+            href="https://www.instagram.com/scale.engsp/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="footer-icon"
+              src="img/instagram.png"
+              alt=""
+            >
 
             <span>Instagram</span>
           </a>
 
-          <a class="footer-action" href="https://www.linkedin.com/company/scale-engenharia/" target="_blank"
-            rel="noopener noreferrer">
-            <img class="footer-icon" src="img/linkedin.png" alt="">
+          <a
+            class="footer-action"
+            href="https://www.linkedin.com/company/scale-engenharia/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="footer-icon"
+              src="img/linkedin.png"
+              alt=""
+            >
 
             <span>LinkedIn</span>
           </a>
+
         </div>
       </div>
+
     </div>
 
     <div class="container copyright">
-      © 2026 SCALE | ARQUITETURA E ENGENHARIA. TODOS OS DIREITOS RESERVADOS.
+      © 2026 SCALE | ARQUITETURA E ENGENHARIA.
+      TODOS OS DIREITOS RESERVADOS.
     </div>
   </footer>
-</body>
 
-<script>
-  /* MENU HAMBÚRGUER */
 
-  const menuButton = document.querySelector(".menu-toggle");
-  const mainNavigation = document.querySelector(".main-nav");
+  <!-- ==================== VISUALIZAÇÃO AMPLIADA ==================== -->
 
-  if (menuButton && mainNavigation) {
-    function closeMenu() {
-      mainNavigation.classList.remove("is-open");
-      document.body.classList.remove("menu-open");
+  <div
+    class="image-modal"
+    id="image-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Visualização ampliada da imagem"
+    aria-hidden="true"
+  >
+    <button
+      class="image-modal-close"
+      type="button"
+      aria-label="Fechar imagem ampliada"
+    >
+      ×
+    </button>
 
-      menuButton.setAttribute("aria-expanded", "false");
-      menuButton.setAttribute("aria-label", "Abrir menu");
+    <button
+      class="image-modal-arrow image-modal-previous"
+      type="button"
+      aria-label="Ver imagem anterior"
+    >
+      ‹
+    </button>
+
+    <img
+      class="image-modal-content"
+      src=""
+      alt=""
+    >
+
+    <button
+      class="image-modal-arrow image-modal-next"
+      type="button"
+      aria-label="Ver próxima imagem"
+    >
+      ›
+    </button>
+
+    <div
+      class="image-modal-counter"
+      aria-live="polite"
+    ></div>
+  </div>
+
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+
+  <script>
+    /* ==================================================
+       MENU HAMBÚRGUER
+    ================================================== */
+
+    const menuButton =
+      document.querySelector(".menu-toggle");
+
+    const mainNavigation =
+      document.querySelector(".main-nav");
+
+    if (menuButton && mainNavigation) {
+      function closeMenu() {
+        mainNavigation.classList.remove("is-open");
+        document.body.classList.remove("menu-open");
+
+        menuButton.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
+        menuButton.setAttribute(
+          "aria-label",
+          "Abrir menu"
+        );
+      }
+
+      menuButton.addEventListener(
+        "click",
+        function () {
+          const menuIsOpen =
+            mainNavigation.classList.toggle("is-open");
+
+          document.body.classList.toggle(
+            "menu-open",
+            menuIsOpen
+          );
+
+          menuButton.setAttribute(
+            "aria-expanded",
+            String(menuIsOpen)
+          );
+
+          menuButton.setAttribute(
+            "aria-label",
+            menuIsOpen
+              ? "Fechar menu"
+              : "Abrir menu"
+          );
+        }
+      );
+
+      mainNavigation
+        .querySelectorAll("a")
+        .forEach(function (link) {
+          link.addEventListener(
+            "click",
+            closeMenu
+          );
+        });
+
+      window.addEventListener(
+        "resize",
+        function () {
+          if (window.innerWidth > 1150) {
+            closeMenu();
+          }
+        }
+      );
     }
 
-    menuButton.addEventListener("click", function () {
-      const menuIsOpen =
-        mainNavigation.classList.toggle("is-open");
 
-      document.body.classList.toggle(
-        "menu-open",
-        menuIsOpen
-      );
+    /* ==================================================
+       COPIAR INFORMAÇÕES DO FOOTER
+    ================================================== */
 
-      menuButton.setAttribute(
-        "aria-expanded",
-        String(menuIsOpen)
-      );
+    document
+      .querySelectorAll(".copy-button")
+      .forEach(function (button) {
+        button.addEventListener(
+          "click",
+          async function () {
+            const textToCopy =
+              button.dataset.copy;
 
-      menuButton.setAttribute(
-        "aria-label",
-        menuIsOpen ? "Fechar menu" : "Abrir menu"
-      );
-    });
+            const textElement =
+              button.querySelector("span");
 
-    mainNavigation
-      .querySelectorAll("a")
-      .forEach(function (link) {
-        link.addEventListener("click", closeMenu);
+            const originalText =
+              textElement.textContent;
+
+            try {
+              await navigator.clipboard.writeText(
+                textToCopy
+              );
+            } catch (error) {
+              const temporaryInput =
+                document.createElement("textarea");
+
+              temporaryInput.value = textToCopy;
+              temporaryInput.style.position = "fixed";
+              temporaryInput.style.opacity = "0";
+
+              document.body.appendChild(
+                temporaryInput
+              );
+
+              temporaryInput.select();
+              document.execCommand("copy");
+              temporaryInput.remove();
+            }
+
+            textElement.textContent = "Copiado!";
+
+            setTimeout(function () {
+              textElement.textContent =
+                originalText;
+            }, 1500);
+          }
+        );
       });
 
-    document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") {
-        closeMenu();
-      }
-    });
 
-    window.addEventListener("resize", function () {
-      if (window.innerWidth > 1150) {
-        closeMenu();
-      }
-    });
-  }
+    /* ==================================================
+       ELEMENTOS DO MODAL
+    ================================================== */
+
+    const imageModal =
+      document.querySelector("#image-modal");
+
+    const modalImage =
+      imageModal.querySelector(
+        ".image-modal-content"
+      );
+
+    const modalCloseButton =
+      imageModal.querySelector(
+        ".image-modal-close"
+      );
+
+    const modalPreviousButton =
+      imageModal.querySelector(
+        ".image-modal-previous"
+      );
+
+    const modalNextButton =
+      imageModal.querySelector(
+        ".image-modal-next"
+      );
+
+    const modalCounter =
+      imageModal.querySelector(
+        ".image-modal-counter"
+      );
+
+    let activeCarousel = null;
+    let elementBeforeModal = null;
 
 
-  /* COPIAR INFORMAÇÕES DO FOOTER */
+    /* ==================================================
+       LOCALIZAR IMAGENS SEQUENCIAIS
+    ================================================== */
 
-  document
-    .querySelectorAll(".copy-button")
-    .forEach(function (button) {
-      button.addEventListener("click", async function () {
-        const textToCopy = button.dataset.copy;
-        const textElement = button.querySelector("span");
-        const originalText = textElement.textContent;
+    function imageExists(path) {
+      return new Promise(function (resolve) {
+        const testImage = new Image();
 
-        try {
-          await navigator.clipboard.writeText(textToCopy);
-        } catch (error) {
-          const temporaryInput =
-            document.createElement("textarea");
+        testImage.onload = function () {
+          resolve(true);
+        };
 
-          temporaryInput.value = textToCopy;
-          temporaryInput.style.position = "fixed";
-          temporaryInput.style.opacity = "0";
+        testImage.onerror = function () {
+          resolve(false);
+        };
 
-          document.body.appendChild(temporaryInput);
-          temporaryInput.select();
-          document.execCommand("copy");
-          temporaryInput.remove();
+        testImage.src = path;
+      });
+    }
+
+
+    async function findProjectImages(prefix) {
+      const images = [];
+      const maximumImages = 50;
+
+      for (
+        let number = 1;
+        number <= maximumImages;
+        number++
+      ) {
+        const path =
+          "img/" +
+          prefix +
+          " (" +
+          number +
+          ").webp";
+
+        const exists =
+          await imageExists(path);
+
+        if (!exists) {
+          break;
         }
 
-        textElement.textContent = "Copiado!";
+        images.push(path);
+      }
+
+      return images;
+    }
+
+
+    /* ==================================================
+       INICIAR CARROSSEL
+    ================================================== */
+
+    async function initializeCarousel(carousel) {
+      const image =
+        carousel.querySelector(
+          ".project-main-image"
+        );
+
+      const previousButton =
+        carousel.querySelector(
+          ".arrow-left"
+        );
+
+      const nextButton =
+        carousel.querySelector(
+          ".arrow-right"
+        );
+
+      const counter =
+        carousel.querySelector(
+          ".carousel-counter"
+        );
+
+      const prefix =
+        carousel.dataset.prefix;
+
+      const projectName =
+        carousel.dataset.project || "Projeto";
+
+      let images =
+        await findProjectImages(prefix);
+
+      /*
+       * Garante que a primeira imagem continue sendo
+       * exibida caso a busca automática encontre algum erro.
+       */
+
+      if (images.length === 0) {
+        images = [image.getAttribute("src")];
+      }
+
+      let currentImage = 0;
+      let touchStartX = 0;
+      let changingImage = false;
+
+
+      function applyBackground(path) {
+        carousel.style.setProperty(
+          "--carousel-background",
+          'url("' + path + '")'
+        );
+      }
+
+
+      function updateCounter() {
+        counter.textContent =
+          currentImage +
+          1 +
+          " / " +
+          images.length;
+      }
+
+
+      function updateModal() {
+        if (
+          activeCarousel !== carousel ||
+          !imageModal.classList.contains("is-open")
+        ) {
+          return;
+        }
+
+        modalImage.src =
+          images[currentImage];
+
+        modalImage.alt =
+          projectName +
+          " — imagem " +
+          (currentImage + 1) +
+          " de " +
+          images.length;
+
+        modalCounter.textContent =
+          currentImage +
+          1 +
+          " / " +
+          images.length;
+      }
+
+
+      function showImage(index) {
+        if (
+          changingImage ||
+          images.length <= 1
+        ) {
+          return;
+        }
+
+        changingImage = true;
+
+        currentImage =
+          (index + images.length) %
+          images.length;
+
+        image.classList.add("is-changing");
 
         setTimeout(function () {
-          textElement.textContent = originalText;
-        }, 1500);
-      });
-    });
+          image.src =
+            images[currentImage];
+
+          image.alt =
+            projectName +
+            " — imagem " +
+            (currentImage + 1) +
+            " de " +
+            images.length;
+
+          applyBackground(
+            images[currentImage]
+          );
+
+          updateCounter();
+          updateModal();
+
+          image.classList.remove(
+            "is-changing"
+          );
+
+          changingImage = false;
+        }, 180);
+      }
 
 
-  /* FUNDO DO HEADER DA HOME */
+      carousel.carouselData = {
+        getCurrentIndex: function () {
+          return currentImage;
+        },
 
-  const homeHeader =
-    document.querySelector(".site-header-index");
+        showImage: function (index) {
+          showImage(index);
+        }
+      };
 
-  if (homeHeader) {
-    function atualizarHeader() {
-      homeHeader.classList.toggle(
-        "is-scrolled",
-        window.scrollY > 60
+
+      /* Configura imagem e fundo iniciais */
+
+      image.src = images[0];
+
+      image.alt =
+        projectName +
+        " — imagem 1 de " +
+        images.length;
+
+      applyBackground(images[0]);
+      updateCounter();
+
+
+      /* Exibe controles somente quando necessários */
+
+      if (images.length > 1) {
+        previousButton.hidden = false;
+        nextButton.hidden = false;
+        counter.hidden = false;
+      } else {
+        previousButton.hidden = true;
+        nextButton.hidden = true;
+        counter.hidden = true;
+      }
+
+
+      /* Setas do card */
+
+      previousButton.addEventListener(
+        "click",
+        function () {
+          showImage(currentImage - 1);
+        }
+      );
+
+      nextButton.addEventListener(
+        "click",
+        function () {
+          showImage(currentImage + 1);
+        }
+      );
+
+
+      /* Abre visualização ampliada */
+
+      image.addEventListener(
+        "click",
+        function () {
+          activeCarousel = carousel;
+
+          elementBeforeModal =
+            document.activeElement;
+
+          modalImage.src =
+            images[currentImage];
+
+          modalImage.alt =
+            projectName +
+            " — imagem " +
+            (currentImage + 1) +
+            " de " +
+            images.length;
+
+          modalCounter.textContent =
+            currentImage +
+            1 +
+            " / " +
+            images.length;
+
+          modalPreviousButton.hidden =
+            images.length <= 1;
+
+          modalNextButton.hidden =
+            images.length <= 1;
+
+          modalCounter.hidden =
+            images.length <= 1;
+
+          imageModal.classList.add(
+            "is-open"
+          );
+
+          imageModal.setAttribute(
+            "aria-hidden",
+            "false"
+          );
+
+          document.body.classList.add(
+            "modal-open"
+          );
+
+          modalCloseButton.focus();
+        }
+      );
+
+
+      /* Arrastar para os lados no celular */
+
+      carousel.addEventListener(
+        "touchstart",
+        function (event) {
+          touchStartX =
+            event.changedTouches[0].clientX;
+        },
+        { passive: true }
+      );
+
+      carousel.addEventListener(
+        "touchend",
+        function (event) {
+          const touchEndX =
+            event.changedTouches[0].clientX;
+
+          const movement =
+            touchEndX - touchStartX;
+
+          if (Math.abs(movement) < 45) {
+            return;
+          }
+
+          if (movement < 0) {
+            showImage(currentImage + 1);
+          } else {
+            showImage(currentImage - 1);
+          }
+        },
+        { passive: true }
       );
     }
 
-    atualizarHeader();
 
-    window.addEventListener(
-      "scroll",
-      atualizarHeader,
-      {passive: true}
+    /* Inicia todos os projetos */
+
+    document
+      .querySelectorAll(".project-image")
+      .forEach(function (carousel) {
+        initializeCarousel(carousel);
+      });
+
+
+    /* ==================================================
+       CONTROLES DA VISUALIZAÇÃO AMPLIADA
+    ================================================== */
+
+    function closeImageModal() {
+      if (
+        !imageModal.classList.contains("is-open")
+      ) {
+        return;
+      }
+
+      imageModal.classList.remove("is-open");
+
+      imageModal.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+
+      document.body.classList.remove(
+        "modal-open"
+      );
+
+      modalImage.src = "";
+      modalImage.alt = "";
+
+      activeCarousel = null;
+
+      if (elementBeforeModal) {
+        elementBeforeModal.focus();
+      }
+    }
+
+
+    function changeModalImage(direction) {
+      if (!activeCarousel) {
+        return;
+      }
+
+      const carouselData =
+        activeCarousel.carouselData;
+
+      const nextIndex =
+        carouselData.getCurrentIndex() +
+        direction;
+
+      carouselData.showImage(nextIndex);
+    }
+
+
+    modalCloseButton.addEventListener(
+      "click",
+      closeImageModal
     );
-  }
-</script>
 
+
+    modalPreviousButton.addEventListener(
+      "click",
+      function () {
+        changeModalImage(-1);
+      }
+    );
+
+
+    modalNextButton.addEventListener(
+      "click",
+      function () {
+        changeModalImage(1);
+      }
+    );
+
+
+    /* Fecha clicando no fundo escuro */
+
+    imageModal.addEventListener(
+      "click",
+      function (event) {
+        if (event.target === imageModal) {
+          closeImageModal();
+        }
+      }
+    );
+
+
+    /* Controles pelo teclado */
+
+    document.addEventListener(
+      "keydown",
+      function (event) {
+        if (
+          imageModal.classList.contains("is-open")
+        ) {
+          if (event.key === "Escape") {
+            closeImageModal();
+          }
+
+          if (event.key === "ArrowLeft") {
+            changeModalImage(-1);
+          }
+
+          if (event.key === "ArrowRight") {
+            changeModalImage(1);
+          }
+
+          return;
+        }
+
+        if (event.key === "Escape") {
+          closeMenu();
+        }
+      }
+    );
+  </script>
+
+</body>
 </html>

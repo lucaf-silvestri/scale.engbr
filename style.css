@@ -2825,3 +2825,262 @@ main:has(.values-intro) .contact-cta {
         overflow: hidden;
     }
 }
+
+.project-image {
+    --carousel-background: none;
+
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    background: #151515;
+}
+
+/* Fundo preenchendo todo o retângulo */
+
+.project-image::before {
+    content: "";
+    position: absolute;
+    inset: -20px;
+    z-index: -2;
+    background-image: var(--carousel-background);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(18px) brightness(0.55);
+    transform: scale(1.08);
+}
+
+/* Escurecimento para destacar a imagem principal */
+
+.project-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.14);
+    pointer-events: none;
+}
+
+/* A imagem sempre aparece inteira */
+
+.project-main-image {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    object-fit: contain;
+    object-position: center;
+    cursor: zoom-in;
+    opacity: 1;
+    transform: scale(1);
+    transition:
+        opacity 0.18s ease,
+        transform 0.25s ease;
+}
+
+.project-main-image.is-changing {
+    opacity: 0;
+    transform: scale(0.985);
+}
+
+/* Setas do card */
+
+.project-image .arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0 0 4px;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+    background: rgba(20, 20, 20, 0.72);
+    color: #ffffff;
+    font: 300 34px/1 Arial, sans-serif;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.project-image .arrow:hover {
+    border-color: #ffffff;
+    background: rgba(20, 20, 20, 0.95);
+}
+
+.project-image .arrow-left {
+    left: 14px;
+}
+
+.project-image .arrow-right {
+    right: 14px;
+}
+
+.carousel-counter {
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    z-index: 3;
+    padding: 5px 9px;
+    border-radius: 20px;
+    background: rgba(20, 20, 20, 0.8);
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 1;
+}
+
+/* Visualização ampliada */
+
+.image-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 80px;
+    background: rgba(0, 0, 0, 0.94);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+}
+
+.image-modal.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.image-modal-content {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: calc(100vh - 120px);
+    object-fit: contain;
+    user-select: none;
+}
+
+.image-modal-close {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #ffffff;
+    font: 300 48px/1 Arial, sans-serif;
+    cursor: pointer;
+}
+
+.image-modal-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 5px;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+    background: rgba(20, 20, 20, 0.7);
+    color: #ffffff;
+    font: 300 38px/1 Arial, sans-serif;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.image-modal-previous {
+    left: 22px;
+}
+
+.image-modal-next {
+    right: 22px;
+}
+
+.image-modal-counter {
+    position: absolute;
+    right: 24px;
+    bottom: 20px;
+    padding: 6px 11px;
+    border-radius: 20px;
+    background: rgba(25, 25, 25, 0.8);
+    color: #ffffff;
+    font-size: 12px;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+@media (max-width: 760px) {
+    .project-image .arrow {
+        width: 38px;
+        height: 38px;
+        font-size: 29px;
+    }
+
+    .project-image .arrow-left {
+        left: 10px;
+    }
+
+    .project-image .arrow-right {
+        right: 10px;
+    }
+
+    .carousel-counter {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .image-modal {
+        padding: 70px 15px;
+    }
+
+    .image-modal-content {
+        max-height: calc(100vh - 140px);
+    }
+
+    .image-modal-close {
+        top: 12px;
+        right: 12px;
+    }
+
+    .image-modal-arrow {
+        top: auto;
+        bottom: 16px;
+        width: 42px;
+        height: 42px;
+        font-size: 31px;
+        transform: none;
+    }
+
+    .image-modal-previous {
+        left: 15px;
+    }
+
+    .image-modal-next {
+        right: 15px;
+    }
+
+    .image-modal-counter {
+        right: 50%;
+        bottom: 28px;
+        transform: translateX(50%);
+    }
+}
